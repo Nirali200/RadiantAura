@@ -1,16 +1,18 @@
 :root{
-  --mid-font-size : 15px;
+  --mid-font-size : 18px;
   --mid-font-weight: 100;
   --xxl-font-size: 40px;
   --xxl-font-weight: 300;
-  --lrg-font-size:20px;
-  --lrg-font-weight:200;
+  --lrg-font-size:25px;
+  --lrg-font-weight:300;
   --background-color:rgb(224 151 178);
 
 }
 
 
-
+.active{
+    color: rgb(211, 108, 160) !important;
+}
 
 
 
@@ -119,6 +121,9 @@
     font-weight: var(--mid-font-weight);
 }
 
+
+
+
 .home{
   display: flex;
   height: 40vw;
@@ -162,6 +167,9 @@
 }
 
 
+
+
+
 .aboutUs{
 
     position: relative;
@@ -183,8 +191,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
+
 .title{
     background-color: var(--background-color);
     height: 80px;
@@ -193,10 +201,12 @@
     align-items: center;
     font-size: var(--xxl-font-size);
     padding-left: 15px;
+}
+
+.animate{
     transition-duration: 2s;
     animation-name: title-flow;
     animation-duration: 1.5s;
-    animation-timeline: view();
     animation-timing-function: ease-in-out;
 }
 
@@ -219,6 +229,59 @@
     align-items: center;
     height: 50%;
     font-size: var(--lrg-font-size);
-    padding: 15px 20px 15px 0px;
+    padding: 25px;
     font-weight: var(--lrg-font-weight);
+}
+
+
+.blogs{
+    position: relative;
+    top: 200px;
+    height: 40vw;
+}
+
+.btitle{
+    display: flex;
+    justify-content: center;
+    font-size: var(--xxl-font-size);
+    font-weight: var(--xxl-font-weight);
+}
+
+.b-container{
+    display: flex;
+    position: relative;
+    top: 80px;
+}
+
+.boxes{
+     display: flex;
+     justify-content: center;
+     position: relative;
+}
+
+
+.boxes img{
+    width: 80%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.text{
+    position:absolute;
+    top:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: var(--mid-font-size);
+    font-weight: var(--mid-font-weight);
+}
+
+.boxes img:hover{
+    transition-duration: 2s;
+    cursor: pointer;
+    opacity: 0;
 }
