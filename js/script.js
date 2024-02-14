@@ -17,3 +17,10 @@ window.addEventListener('scroll',()=>{
         title.classList.add('animate')
     }
 })
+
+
+const img = document.querySelector('b-container').childNodes
+
+for(let i=0;i<img.length;i++){
+     
+}

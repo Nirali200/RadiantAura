@@ -6,6 +6,7 @@
   --lrg-font-size:25px;
   --lrg-font-weight:300;
   --background-color:rgb(224 151 178);
+  --btn-border: rgb(226, 102, 162);
 
 }
 
@@ -159,7 +160,7 @@
  font-size: var(--mid-font-size);
  border-radius: 5px;
  background: transparent;
- border-color: rgb(226, 102, 162);
+ border-color:var(--btn-border);
 }
 .hbtn:hover{
    background-color: white;
@@ -255,33 +256,68 @@
 
 .boxes{
      display: flex;
+     flex-direction: column;
      justify-content: center;
+     align-items: center;
      position: relative;
+     border-color: var(--btn-border);
 }
 
 
 .boxes img{
-    width: 80%;
-    height: 100%;
-    backface-visibility: hidden;
+    width: 90%;
+    height: 90%;
+    backface-visibility:hidden;
 }
+
 
 .text{
     position:absolute;
-    top:15px;
+    top: 50px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    z-index: -1;
+
 }
 
 .name{
-    font-size: var(--mid-font-size);
-    font-weight: var(--mid-font-weight);
+    font-size: var(--lrg-font-size);
+    font-weight: var(--lrg-font-weight);
 }
 
-.boxes img:hover{
-    transition-duration: 2s;
+.blog{
+    font-size: var(--mid-font-size);
+    font-weight: var(--mid-font-weight);
+    margin-top: 35px;
+}
+/* 
+.blogbtn{
+    margin-top: 20px;
+    width: 90%;
+    height: 10%;
+    font-size: var(--mid-font-size);
+    padding: 10px;
+    background: transparent;
+    border-color: var(--btn-border);
+    border-radius: 5px;
+}
+
+
+.blogbtn:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+} */
+
+.boxes img:hover {
+    transition-duration: 0.8s;
     cursor: pointer;
     opacity: 0;
 }
+.boxes img:hover ~ .text{
+    opacity: 100;
+    transition-duration: 2s;
+}   
