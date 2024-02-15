@@ -19,8 +19,3 @@ window.addEventListener('scroll',()=>{
 })
 
 
-const img = document.querySelector('b-container').childNodes
-
-for(let i=0;i<img.length;i++){
-     
-}
