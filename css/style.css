@@ -1,3 +1,6 @@
+/* @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css"; */
+
 :root{
   --mid-font-size : 15px;
   --mid-font-weight: 100;
@@ -7,9 +10,11 @@
   --lrg-font-weight:300;
   --background-color:rgb(224 151 178);
   --btn-border: rgb(226, 102, 162);
+  --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
+  --gray-shade:rgb(234, 225, 225);
+   
 
 }
-
 
 .active{
     color: rgb(211, 108, 160) !important;
@@ -240,10 +245,14 @@
 }
 
 
+
+
+
 .blogs{
     position: relative;
-    top: 200px;
-    height: 40vw;
+    top: 120px;
+    padding: 15px;
+    height: 42vw;
 }
 
 .btitle{
@@ -302,33 +311,101 @@
     margin: 10px;
 
 }
-/* 
-.blogbtn{
-    margin-top: 20px;
-    width: 90%;
-    height: 10%;
-    font-size: var(--mid-font-size);
-    padding: 10px;
-    background: transparent;
-    border-color: var(--btn-border);
-    border-radius: 5px;
-}
-
-
-.blogbtn:hover{
-    background-color: var(--background-color);
-    cursor: pointer;
-} */
 
 .boxes img:hover {
     transition-duration: 0.8s;
     cursor: pointer;
     opacity: 0;
 }
+
 .boxes img:hover ~ .text{
     opacity: 100;
     transition-duration: 1.5s;
     border: 1.5px solid;
     border-color: var(--btn-border);
     padding: 15px;
-}   
+}  
+
+
+
+.related{
+    position: relative;
+    top: 70px;
+    padding: 10px;
+    height: 40vw;
+}
+
+.related-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lftbtn,#rigtbtn{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+.recTitle{
+    display: flex;
+    justify-content: center;
+    font-size: var(--xxl-font-size);
+    font-weight: var(--xxl-font-weight);
+    margin-bottom: 8px;
+}
+
+.media-scroller{
+    position: relative;
+    top: 60px;
+    --spacer: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 24.2%;
+    gap: var(--spacer);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0 var(--spacer) var(--spacer);
+}
+
+
+.media > img{
+    inline-size: 100%;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.media a{
+    text-decoration: none;
+    color: var(--gray-shade);
+}
+
+.media{
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: min-content;
+    padding: var(--spacer);
+    background-color: var(--background-color);
+    gap: var(--spacer);
+    /* box-shadow: var(--box-shadow); */
+}
+
+.media-scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.media:hover{
+    transform: scale(1.05);
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding: var(--spacer);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+

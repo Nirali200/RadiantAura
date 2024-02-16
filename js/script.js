@@ -19,3 +19,22 @@ window.addEventListener('scroll',()=>{
 })
 
 
+let scrollContainer = document.querySelector('.media-scroller');
+let lftbtn = document.getElementById('lftbtn');
+let rigtbtn = document.getElementById('rigtbtn');
+
+// scrollContainer.addEventListener('wheel',(e)=>{
+//     e.preventDefault();
+//     scrollContainer.scrollLeft += e.deltaY;
+// })
+
+rigtbtn.addEventListener('click',()=>{
+    scrollContainer.style.scrollBehavior = 'smooth';
+    scrollContainer.scrollLeft += 400;
+})
+lftbtn.addEventListener('click',()=>{
+    scrollContainer.style.scrollBehavior = 'smooth';
+    scrollContainer.scrollLeft -= 400;
+})
+
+
