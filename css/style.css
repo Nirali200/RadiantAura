@@ -409,3 +409,50 @@
     scroll-snap-align: start;
 }
 
+
+
+.products{
+    position: relative;
+    top: 170px;
+}
+
+.recommanded{
+    height: 100vw;
+    display: block;
+    background:url("../images/back_att.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+
+}
+
+.types{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.type_wrap {
+    background-color: rgba(255, 255, 255, 0.71);                                    ;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+}
+.type_wrap  h3:hover{
+    color: var(--background-color);
+}
+.type_wrap img{
+    height: 300px;
+    width: 400px;
+}
+.type_wrap:hover{
+    border: 2px solid var(--btn-border);
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
