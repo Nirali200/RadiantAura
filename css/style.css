@@ -456,3 +456,69 @@
     cursor: pointer;
     transition-duration: 0.8s;
 }
+
+
+
+.contactUs{
+    position: relative;
+    top: 90px;
+    padding: 25px;
+}
+
+.contitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--xxl-font-size);
+    font-weight: var(--xxl-font-weight);
+    margin-bottom: 15px;
+}
+
+.formContainer{
+    background-color: rgba(255, 255, 255, 0.71);
+    display: grid;
+    height: 500px;
+    padding: 20px;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 500px;
+    border: none;
+    padding: 0 5px;
+    outline: none;
+}
+
+.formContainer input{
+    height: 30px;
+}
+.formContainer textarea{
+    height: 200px;
+    width: 500px;
+    border: none;
+    padding: 5px;
+}
+.submitbtn{
+    width: 150px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: 2px solid var(--gray-shade);
+    border: none;
+    border-radius:4px;
+}
+
+.submitbtn:hover{
+    background-color: var(--background-color);
+    outline: none;
+}
+
+.formContainer textarea:active,.input:active{
+    outline: 2px solid var(--btn-border);
+}
+
+.formContainer textarea:focus-visible,.input:focus-visible{
+    outline: 2px solid var(--btn-border);
+}
