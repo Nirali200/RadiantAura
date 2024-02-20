@@ -120,7 +120,9 @@
 }
 
 .log{
+    text-decoration: none;
     position: absolute;
+    color: black;
     right: 80px;
     cursor: pointer;
     font-size: var(--mid-font-size);
@@ -417,7 +419,7 @@
 }
 
 .recommanded{
-    height: 100vw;
+    height: 107vw;
     display: block;
     background:url("../images/back_att.jpg");
     background-attachment: fixed;
@@ -436,7 +438,7 @@
 }
 
 .type_wrap {
-    background-color: rgba(255, 255, 255, 0.71);                                    ;
+    background-color: rgba(255, 255, 255, 0.71);                  
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -456,6 +458,13 @@
     cursor: pointer;
     transition-duration: 0.8s;
 }
+
+
+
+
+
+
+
 
 
 
@@ -521,4 +530,65 @@
 
 .formContainer textarea:focus-visible,.input:focus-visible{
     outline: 2px solid var(--btn-border);
+}
+
+
+
+
+
+
+.logContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+}
+
+.login{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    height:250px;
+    width: 500px;
+    padding: 20px 40px;
+    gap: 0px;
+}
+
+.login input{
+    width: 70%;
+    height: 25px;
+    outline: none;
+    border: none;
+    justify-self: center;
+    border-radius: 4px;
+}
+
+.login input:active , .login input:focus-visible{
+    outline: 2px solid var(--gray-shade);
+}
+
+.logsub{
+    width: 150px !important;
+    margin-top: 25px;
+}
+.logsub:hover{
+    background-color: white !important;
+    outline: 2px solid var(--gray-shade);
+}
+
+.login label{
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 75px;
+    font-size: var(--mid-font-size);
+    font-weight: var(--mid-font-weight);
+}
+
+.logTitl{
+
+    font-size: var(--xxl-font-size);
+    font-weight: var(--xxl-font-weight);
+    margin-bottom: 25px;
 }
