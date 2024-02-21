@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="module" href="../js/script.js"> 
+    <link rel="stylesheet" type="text/css"  href="../css/index.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <title>NPoint - Contact</title>
+</head>
+<body>
+    <div class="w-container">
+        <nav class="navbar">
+            <div class="navLeft">   
+                <ul>
+                    <li class="lft"><a href="/home">Shop</a></li>
+                    <li class="lft"><a href="/faq">FAQ</a></li>
+                    <li class="lft"><a href="/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo">NPoint</div>
+            <div class="navRight">
+                <div class="box">
+                    <input type="text" placeholder="Search.....">
+                    <img class="search" src="../images/search.png">
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <a class="log" href="/login">Log In</a>
+            </div>
+        </nav>
+    </div>
+    <div class="contactUs" id="contact">
+        <div class="contitle">Contact Us</div>
+        <form id="form" class="formContainer" method="post" action="/contact">
+            <label class="lable">Name</label>
+            <input type="name" class="input" name="name" placeholder="Enter your name...">
+            <label class="lable">E-mail</label>
+            <input type="email" class="input" name="email" placeholder="Enter your email address...">
+            <label class="label">Leave us A Note...</label>
+            <textarea placeholder="Type here....." name="reviews"></textarea>
+            <input type="submit" value="Submit" class="submitbtn">
+        </form>
+    </div>
+</body>
+<script src="../js/script.js"></script>
+</html>

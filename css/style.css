@@ -419,7 +419,7 @@
 }
 
 .recommanded{
-    height: 107vw;
+    height: 55vw;
     display: block;
     background:url("../images/back_att.jpg");
     background-attachment: fixed;
@@ -484,7 +484,8 @@
 }
 
 .formContainer{
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color:rgba(240, 223, 223, 0.6);
+    box-shadow: var(--box-shadow);
     display: grid;
     height: 500px;
     padding: 20px;
@@ -525,11 +526,11 @@
 }
 
 .formContainer textarea:active,.input:active{
-    outline: 2px solid var(--btn-border);
+    outline: 2px solid var(--gray-shade);
 }
 
 .formContainer textarea:focus-visible,.input:focus-visible{
-    outline: 2px solid var(--btn-border);
+    outline: 2px solid var(--gray-shade);
 }
 
 
@@ -571,7 +572,6 @@
 
 .logsub{
     width: 150px !important;
-    margin-top: 25px;
 }
 .logsub:hover{
     background-color: white !important;
@@ -587,8 +587,20 @@
 }
 
 .logTitl{
-
     font-size: var(--xxl-font-size);
     font-weight: var(--xxl-font-weight);
     margin-bottom: 25px;
+}
+
+.error{
+  justify-self: center;
+  font-size: var(--mid-font-size);
+  font-weight: var(--mid-font-weight);
+  color: red;
+}
+
+.logOut{
+    height: 100px !important;
+    justify-content: center;
+    align-items: center;
 }

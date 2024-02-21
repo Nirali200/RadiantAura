@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const path = require('path') 
 const cookieParser = require('cookie-parser')
 const jwt = require('jsonwebtoken')
+const bcript = require('bcrypt');
+
 
 
 const app = express();
@@ -41,11 +43,14 @@ app.get("/home",(req,res) =>{
     res.render("Home");
 })
 
-app.post('/home',(req,res)=>{
+app.get("/contact",(res,req) => {
+    res.render("Contact");
+})
+
+app.post('/contact',(req,res)=>{
     const {name,email,reviews} = req.body;
-    console.log(req.body);
     contactus.create({name,email,reviews});
-    res.redirect('/home');  
+    res.redirect('/contact');
 })
 
 app.get('/login',(req,res) =>{
@@ -61,11 +66,21 @@ app.post('/register',async(req,res) =>{
     const { UserName , Password} = req.body;
 
     let user = await users.findOne({UserName});
-    user = await users.create({UserName,Password});
     if(user){
-        res.redirect('/login');
+        return  res.redirect('/login');
     }
-    res.render("Login");
+    const hashPassword = await bcript.hash(Password,10);
+    
+
+    user = await users.create({UserName,Password : hashPassword});
+    const token = jwt.sign({_id:user._id},"parthnirali")
+
+    res.cookie("token",token,{
+        httpOnly:true,
+        expires: new Date(Date.now() + 60*1000), 
+    })
+    res.redirect('/');
+    return res.render("LogOut",{UserName});
 })
 
 const isAuthenticat = async(req,res,next) =>{
@@ -81,8 +96,8 @@ const isAuthenticat = async(req,res,next) =>{
 }
 
 app.get('/',isAuthenticat,(req,res) => {
-   console.log(req.user);
-    res.render("LogOut");
+    const {UserName} = req.user;
+    res.render("LogOut",{UserName});
 })
 
 
@@ -92,15 +107,16 @@ app.post('/login',async(req,res) => {
 
     let user = await users.findOne({UserName});
     if(!user){
-      res.redirect("/register");
-    }
-    const isMatch = user.Password === Password;
-    
-    if(!isMatch){ 
-    return res.render("Login",{UserName, message: "Incorrect Password" });
+     return res.redirect("/register");
     }
 
-    user = await users.create({UserName,Password})
+    const isMatch = await bcript.compare(Password,user.Password);
+    
+    if(!isMatch){ 
+    return res.render("Login",{UserName, message: "Incorrect Password !!!" });
+    }
+
+    // user = await users.create({UserName,Password})
 
     const token = jwt.sign({_id:user._id},"parthnirali")
 
