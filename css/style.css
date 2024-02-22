@@ -12,6 +12,7 @@
   --btn-border: rgb(226, 102, 162);
   --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
   --gray-shade:rgb(234, 225, 225);
+  --white-backGround:rgba(255, 255, 255, 0.605);
    
 
 }
@@ -138,6 +139,7 @@
   background: url("../images/homeBack.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   margin: 0 15px;
 }
@@ -252,7 +254,7 @@
 
 .blogs{
     position: relative;
-    top: 120px;
+    top: 70px;
     padding: 15px;
     height: 42vw;
 }
@@ -332,7 +334,7 @@
 
 .related{
     position: relative;
-    top: 70px;
+    top: 50px;
     padding: 10px;
     height: 40vw;
 }
@@ -360,7 +362,7 @@
 
 .media-scroller{
     position: relative;
-    top: 60px;
+    top: 50px;
     --spacer: 1rem;
     display: grid;
     grid-auto-flow: column;
@@ -389,7 +391,7 @@
     display: grid;
     grid-template-rows: min-content;
     padding: var(--spacer);
-    background-color: var(--background-color);
+    background-color: var(--white-backGround);
     gap: var(--spacer);
     /* box-shadow: var(--box-shadow); */
 }
@@ -419,7 +421,7 @@
 }
 
 .recommanded{
-    height: 55vw;
+    height: 53vw;
     display: block;
     background:url("../images/back_att.jpg");
     background-attachment: fixed;
@@ -438,7 +440,7 @@
 }
 
 .type_wrap {
-    background-color: rgba(255, 255, 255, 0.71);                  
+    background-color: var(--white-backGround);                  
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -469,9 +471,11 @@
 
 
 .contactUs{
-    position: relative;
-    top: 90px;
     padding: 25px;
+    background-image: url('../images/contact_back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contitle{
@@ -484,14 +488,16 @@
 }
 
 .formContainer{
-    background-color:rgba(240, 223, 223, 0.6);
+    background-color:var(--white-backGround);
     box-shadow: var(--box-shadow);
     display: grid;
     height: 500px;
+    width: 50%;
     padding: 20px;
     grid-template-columns: auto;
     justify-content: center;
     align-items: center;
+    margin: auto auto;
 }
 .input{
     width: 500px;
@@ -520,17 +526,22 @@
     border-radius:4px;
 }
 
+.formContainer input::placeholder,.formContainer textarea::placeholder{
+    color: rgba(163, 158, 158, 0.853);
+
+}
+
 .submitbtn:hover{
     background-color: var(--background-color);
     outline: none;
 }
 
 .formContainer textarea:active,.input:active{
-    outline: 2px solid var(--gray-shade);
+    outline: 2px solid var(--background-color);
 }
 
 .formContainer textarea:focus-visible,.input:focus-visible{
-    outline: 2px solid var(--gray-shade);
+    outline: 2px solid var(--background-color);
 }
 
 
@@ -543,13 +554,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vw;
+    position: relative;
+    height: 35vw;
+    background-image: url("../images/login_back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .login{
     display: grid;
     grid-template-columns: auto;
-    background-color: var(--background-color);
+    background-color: var(--white-backGround);
     box-shadow: var(--box-shadow);
     height:250px;
     width: 500px;
@@ -560,23 +576,25 @@
 .login input{
     width: 70%;
     height: 25px;
+    padding: 2px 3px;
     outline: none;
     border: none;
     justify-self: center;
     border-radius: 4px;
 }
 
+.login input::placeholder{
+    color: rgba(163, 158, 158, 0.853);
+}
+
 .login input:active , .login input:focus-visible{
-    outline: 2px solid var(--gray-shade);
+    outline: 2px solid var(--background-color);
 }
 
 .logsub{
     width: 150px !important;
 }
-.logsub:hover{
-    background-color: white !important;
-    outline: 2px solid var(--gray-shade);
-}
+
 
 .login label{
     height: 15px;
@@ -603,4 +621,55 @@
     height: 100px !important;
     justify-content: center;
     align-items: center;
+}
+
+
+.footer{
+    position: relative;
+    top: 200px;
+    height: 375px;
+    padding: 20px;
+    background: linear-gradient(rgba(185, 111, 150, 0.492), #e4dfdf);
+    box-shadow: var(--box-shadow);
+}
+.footcontain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 30px;
+}
+
+.footcontain u,img:hover{
+    cursor: pointer;
+}
+
+.main{
+    margin: auto;
+    height: 180px;
+}
+
+.main::after{
+content: "";
+
+}
+
+.main p{
+    font-size: var(--lrg-font-size);
+    font-weight: var(--mid-font-weight);
+}
+
+.footLi{
+    position: relative;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-bottom: 12px;
+}
+
+.footLi a:hover{
+ color: var(--white-backGround);
+}
+
+.footerInfo{
+    display: flex;
+    justify-content: center;
+    background-color:  var(--white-backGround);
 }

@@ -38,19 +38,18 @@ app.use(express.urlencoded({ extended: true}))
 app.use(cookieParser());
 app.set("view engine","ejs")
 
-
 app.get("/home",(req,res) =>{
     res.render("Home");
-})
-
-app.get("/contact",(res,req) => {
-    res.render("Contact");
 })
 
 app.post('/contact',(req,res)=>{
     const {name,email,reviews} = req.body;
     contactus.create({name,email,reviews});
     res.redirect('/contact');
+})
+
+app.get("/contact",(req,res) => {
+    res.render("Contact");
 })
 
 app.get('/login',(req,res) =>{

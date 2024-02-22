@@ -11,6 +11,11 @@ for(let i=1;i<li.length;i++){
 }
 }
 
+if(document.querySelector('.log').href.includes(pathName)){
+    document.querySelector('.log').classList.add('active');
+}
+
+
 window.addEventListener('scroll',()=>{
     const title = document.querySelector('.title');
     const scrollPosition = window.scrollY+window.innerHeight;
