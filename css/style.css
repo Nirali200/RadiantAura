@@ -383,7 +383,7 @@
 
 .media a{
     text-decoration: none;
-    color: var(--gray-shade);
+    color: rgba(105, 105, 105, 0.781);
 }
 
 .media{

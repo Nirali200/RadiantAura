@@ -19,7 +19,7 @@ app.set("view engine","ejs");
 app.use(require('./routs/contactRout.js'));
 app.use(require('./routs/userRout.js'));
 
-app.get("/home",(req,res) =>{
+app.get("/home",(req,res) =>{ 
     res.render("Home");
 })
 
