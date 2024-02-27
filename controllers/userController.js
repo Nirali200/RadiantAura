@@ -43,7 +43,7 @@ const postLogin = async(req,res) => {
     
     const { UserName , Password } = req.body;
 
-    let user = await users.findOne({UserName});
+    let user = await users.findOne({UserName}).select("+Password");
 
     if(!user){
      return res.redirect("/register");
