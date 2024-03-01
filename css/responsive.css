@@ -1,0 +1,218 @@
+:root{
+    --mid-font-size : 15px;
+    --mid-font-weight: 100;
+    --xxl-font-size: 40px;
+    --xxl-font-weight: 300;
+    --lrg-font-size:23px;
+    --lrg-font-weight:300;
+    --background-color:rgb(224 151 178);
+    --btn-border: rgb(226, 102, 162);
+    --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
+    --gray-shade:rgb(234, 225, 225);
+    --white-backGround:rgba(255, 255, 255, 0.605);
+    --nav-backGround:rgba(224, 151, 178, 0.901);
+     
+  
+}
+
+.hamburger{
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.line{
+    width: 35px;
+    height: 4px;
+    margin: 3px 3px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width:1024px){
+    :root{
+        --mid-font-size : 15px;
+        --mid-font-weight: 100;
+        --xxl-font-size:  30px;
+        --xxl-font-weight: 300;
+        --lrg-font-size:23px;
+        --lrg-font-weight:300;
+    }
+    .navLeft{
+        position: absolute;
+        width: 300px;
+    }
+    .res{
+        display: block;
+        width: 30%;
+    }
+    .navbar{
+        height: 30%;
+    }
+    .hamburger{
+        z-index: 1;
+    }
+    .burgerRes{
+        display: block;
+    }
+    .navLeft ul{
+        flex-direction: column;
+        background-color: var(--nav-backGround);
+        height: 450px;
+        width: 100%;
+        backface-visibility: hidden;
+        margin: 0px 0px;
+    } 
+    .navLeftres ul{
+        opacity: 0;
+        transition: 0.9s ease-in-out;
+    }  
+    .w-container{
+        padding-left: 0px;
+        height: 50px;
+    }
+    .lft{
+        margin: 25px auto;
+        width: 100%;
+    }
+    .box:hover input{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:1252px){
+    .box{
+        left: 15%;
+    }
+}
+
+
+@media only screen and (max-width:870px){
+    :root{
+        --mid-font-size : 15px;
+        --mid-font-weight: 100;
+        --xxl-font-size:  25px;
+        --xxl-font-weight: 300;
+        --lrg-font-size:23px;
+        --lrg-font-weight:300;
+    }
+    .logo{
+        width:30%;
+    }
+    .navLeft{
+        width: 35%;
+    }
+    .navRight{
+        width: 35%;
+    }
+    .box{
+        height: 10px;
+        padding: 10px 4.5px;
+        border-radius: 35px;
+        left: 100px;
+    }
+    .box:hover input{
+        width: 70px;
+    }
+    .w-container{
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-top: 7px;
+    }
+    .search{
+        height: 20px;
+        width: 19px;
+    }
+    body{
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width:784px){
+    .box{
+        display: none;
+    }
+    .lable{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:533px){
+    body{
+        padding: 0;
+    }
+    :root{
+        --mid-font-size : 10px;
+        --mid-font-weight: 100;
+        --xxl-font-size:  20px;
+        --xxl-font-weight: 300;
+        --lrg-font-size:23px;
+        --lrg-font-weight:300;
+    }
+    .navLeft{
+        position: absolute;
+        top: 0;
+        width: 200px;
+    }
+    .res{
+        display: block;
+        width: 40%;
+    }
+    .log{
+        right: 10%;
+    }
+    
+}
+@media only screen and (max-width:430px){
+    body{
+        padding: 0;
+        margin: 0;
+        width: 111%;
+    }
+    .navLeft{
+        position: absolute;
+        top: 0;
+        width: 150px;
+    }
+    .res{
+        display: block;
+        width: 40%;
+    }
+    .formContainer textarea{
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------Contact------------------------------- */
+
+
+
+@media only screen and (max-width:1114px){
+.input,.formContainer textarea{
+    width: 95%;
+}
+
+.formContainer{
+    width: 65%;
+    grid-template-columns: 90%;
+
+}
+
+}

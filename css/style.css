@@ -31,6 +31,8 @@
 
 .navbar{
     display: flex;
+    height: 80px;
+
 }
 
 .navLeft{
@@ -68,6 +70,9 @@
 }
 
 
+.res{
+    display: none;
+}
 
 .navLeft ul{
     display: flex;
@@ -87,14 +92,13 @@
     height: 20px;
     display: flex;
     cursor: pointer;
-    padding: 12px 10px;
+    padding: 12px 9px;
     background-color:var(--background-color);
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
     position: relative;
     left: 80px;
-    
 }
 
 .box:hover input{
@@ -122,9 +126,12 @@
 
 .log{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     color: black;
-    right: 80px;
+    right: 5%;
     cursor: pointer;
     font-size: var(--mid-font-size);
     font-weight: var(--mid-font-weight);
@@ -504,11 +511,9 @@
     border: none;
     padding: 0 5px;
     outline: none;
-}
-
-.formContainer input{
     height: 30px;
 }
+
 .formContainer textarea{
     height: 200px;
     width: 500px;
@@ -673,3 +678,5 @@ content: "";
     justify-content: center;
     background-color:  var(--white-backGround);
 }
+
+
