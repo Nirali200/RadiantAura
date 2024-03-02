@@ -1,7 +1,7 @@
 
 const li = document.querySelector('.navLeft').childNodes[1].childNodes;
 const pathName = window.location.pathname;
-for(let i=1;i<li.length;i++){
+for(let i=3;i<li.length;i++){
     if(i%2 == 1){
         console.log(li[i].childNodes[0].href);
         console.log(pathName);

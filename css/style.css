@@ -69,6 +69,10 @@
     transform: scaleX(1);
 }
 
+.resSerch{
+    display: none;
+}
+
 
 .res{
     display: none;
