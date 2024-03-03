@@ -24,7 +24,7 @@ const postRegistration = async(req,res) =>{
         httpOnly:true,
         expires: new Date(Date.now() + 60*1000), 
     })
-    res.redirect('/');
+    res.redirect('/login/check');
     return res.render("LogOut",{UserName});
 }
 
@@ -61,7 +61,7 @@ const postLogin = async(req,res) => {
         httpOnly:true,
         expires: new Date(Date.now() + 60*1000), 
     })
-    res.redirect('/');
+    res.redirect('/login/check');
 }
 
 
@@ -70,7 +70,7 @@ const logOut = (req,res) => {
         httpOnly:true,
         expires: new Date(Date.now()), 
     })
-    res.redirect('/');
+    res.redirect('/login/check');
 }
 
 

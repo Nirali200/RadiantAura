@@ -11,8 +11,6 @@
     --gray-shade:rgb(234, 225, 225);
     --white-backGround:rgba(255, 255, 255, 0.605);
     --nav-backGround:rgba(224, 151, 178, 0.901);
-     
-  
 }
 
 .hamburger{
@@ -22,8 +20,6 @@
     cursor: pointer;
     display: none;
 }
-
-
 
 .line{
     width: 35px;
@@ -58,6 +54,17 @@
 
 }
 
+
+
+@media only screen and (max-width:1234px){
+    .logContain{
+        height: 28rem;
+    }
+
+}
+
+
+
 @media only screen and (max-width:1024px){
     :root{
         --mid-font-size : 15px;
@@ -66,6 +73,7 @@
         --xxl-font-weight: 300;
         --lrg-font-size:23px;
         --lrg-font-weight:300;
+        --about-font-size:1.7vw;
     }
     .navLeftResp{
         position: absolute;
@@ -97,7 +105,7 @@
     } 
     .resAnimate{
         animation-name: shows;
-        animation-duration: 1s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
     }
@@ -114,7 +122,7 @@
         animation-duration: 0.6s;
         animation-direction: reverse;
         animation-fill-mode: none;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in-out;
     }
     .navLeftres ul{
         opacity: 0;
@@ -130,6 +138,25 @@
     .box:hover input{
         width: 100px;
     }
+    .recommanded{
+        height: 50rem;
+    }
+    .blogs{
+        margin-bottom: 40px;
+    }
+    .media-scroller{
+        top: 40px;
+    }
+    .title{
+        height: 65px;
+        width: 200px;
+    }
+    .main{
+    height: 160px;
+    }
+    .footerInfo{
+    top: -8%;
+    }
 }
 
 @media only screen and (max-width:1252px){
@@ -140,13 +167,33 @@
 
 
 @media only screen and (max-width:870px){
+    body{
+        padding: 0px 10px;
+    }
     :root{
         --mid-font-size : 15px;
         --mid-font-weight: 100;
         --xxl-font-size:  25px;
         --xxl-font-weight: 300;
-        --lrg-font-size:23px;
+        --lrg-font-size:15px;
         --lrg-font-weight:300;
+    }
+    .home{
+        width: 95%;
+        margin: 0 12px;
+    }
+    .hbtn{
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .b-container{
+        top: 15%;
+    }
+    .blogs{
+        top: 65px;
+    }
+    .hamburger{
+        top: 15px;
     }
     .logo{
         width:30%;
@@ -178,37 +225,46 @@
         height: 20px;
         width: 19px;
     }
-    body{
-        padding: 0px 10px;
+    .footer{
+        height: 335px;
+       padding: 17px;
+    }
+    .footcontain{
+     margin: 45px 30px;
+    }
+    .main{
+    height: 140px;
+    }
+    .login,.logOut{
+        width: 300px;
+    }
+    .login input{
+        width: 90%;
+    }
+    .login label{
+        margin-left: 15px;
+    }
+    .footerInfo{
+        margin-top: -2%;
     }
 }
 
 @media only screen and (max-width:784px){
-    .box{
-        display: none;
-    }
-    .resSerch{
-        display: block;
-    }
-    .lable{
-        font-size: 15px;
-    }
-    .hamburger{
-        top: 15px;
-    }
-}
-
-@media only screen and (max-width:533px){
     body{
         padding: 0;
     }
-    :root{
-        --mid-font-size : 10px;
-        --mid-font-weight: 100;
-        --xxl-font-size:  20px;
-        --xxl-font-weight: 300;
-        --lrg-font-size:23px;
-        --lrg-font-weight:300;
+    .box{
+        display: none;
+    }
+    .home{
+        height: 50vw;
+    }
+    .title{
+        height: 20%;
+        width: 50%;
+    }
+    #lftbtn,#rigtbtn{
+       display: none;
     }
     .navLeftResp{
         position: absolute;
@@ -219,15 +275,131 @@
         display: block;
         width: 40%;
     }
-    .log{
-        right: 10%;
+    .resSerch{
+        display: block;
+    }
+    .lable{
+        font-size: 15px;
     }
     .hamburger{
         top: 12px;
     }
+    .footerInfo p{
+        font-size: var(--lrg-font-size);
+    }
+    .products{
+        top: 200px;
+        margin-bottom: 250px;
+    }
+    .recommanded{
+        height: 40rem;
+    }
+    .type_wrap img{
+        height: 200px;
+    }
+    
+}
+
+@media only screen and (max-width:734px){
+    .footer{
+        height: 280px;
+        padding: 15px;
+    }
+    .footcontain{
+        margin: 4% 4%;
+    }
+    .main{
+        height: 120px;
+    }
+    
+    }
+
+@media only screen and (max-width:659px){
+    .footcontain{
+    margin: 4% 3%;
+    gap: 20px;
+    }
+    .home{
+        height: 18rem;
+    }
+    .footer{
+        height: 250px;
+    }
+    .main{
+        height: 90px;
+    }
+    .media-scroller{
+        top: 20px;
+        grid-auto-columns: 33%;
+    }
+    .products{
+        top: 230px;
+    }
+}
+
+@media only screen and (max-width:533px){
+    body{
+        padding: 0;
+    }
+    :root{
+        --mid-font-size : 12px;
+        --mid-font-weight: 100;
+        --xxl-font-size:  20px;
+        --xxl-font-weight: 300;
+        --lrg-font-size:12px;
+        --lrg-font-weight:300;
+        --about-font-size: 1.9vw;
+    }
+     /* ---cross--- */
+    .lin1,.lin2{
+        width: 25px;
+        height: 4px;
+    }
+    .navLeftResp{
+        position: absolute;
+        top: 0;
+        width: 200px;
+    }
+    .aboutUs{
+        height: 50vw;
+    }
+    .content{
+    padding: 25px 20px 0px 0px;
+    }
+    .res{
+        display: block;
+        width: 40%;
+    }
+    .log{
+        right: 5%;
+    }
+    .hamburger{
+        top: 12px;
+    }
+    .products{
+        margin-top: 50px;
+    }
     .line{
         height: 3.5px;
     }
+    .logContain{
+        height: 25rem;
+    }
+    .login,.logOut{
+        width: 70%;
+        padding: 15px 30px;
+    }
+    .login label{
+        margin-left: 15px;
+    }
+    .footer{
+        height: 220px;
+    }
+    .main{
+        height: 70px;
+    }
+
+
 }
 @media only screen and (max-width:430px){
     body{
@@ -235,27 +407,133 @@
         margin: 0;
         width: 111%;
     }
+    :root{
+        --mid-font-size : 12px;
+        --mid-font-weight: 100;
+        --xxl-font-size:  20px;
+        --xxl-font-weight: 300;
+        --lrg-font-size:12px;
+        --lrg-font-weight:300;
+        --about-font-size: 15px;
+    }
     .navLeftResp{
         position: absolute;
         top: 0;
-        width: 150px;
+        width: 140px;
     }
+    .home{
+        height: 20rem;
+    }
+    .aboutUs{
+        flex-direction: column;
+        height: 40rem;
+        top: 40px;
+    }
+    .aboutlft{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    .aboutrigt{
+        width: 90%;
+        margin: auto;
+        margin-top: -10%;
+    }
+    .title{
+        height: 50px;
+        width: 55%;
+    }
+    .content{
+        margin-top: 30px;
+    }
+    .b-container{
+        flex-direction: column;
+        gap: 20px;
+        top: 25px;
+    }
+    .blogs{
+        height: 410vw;
+        margin-bottom: 20px;
+    }
+
+    .media-scroller{
+    grid-auto-columns: 49%;
+    --spacer:0.8rem;
+    }
+    .related{
+        height: 60vw;
+    }
+    .types{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .recommanded{
+        height: 75rem;
+
+    }
+
     .res{
         display: block;
-        width: 40%;
+        width: 45%;
     }
     .formContainer textarea{
         height: 100px;
     }
     .log{
-        right: 5%;
+        right: 1%;
     }
+    .main{
+        height: 100px;
+    }
+
+    .footLi{
+    margin-bottom: 5px;
+    }
+
+    .main img{
+        height: 20px;
+        width: 20px;
+    }
+
 }
 
 @media only screen and (max-width:339px){
   body{
     width: 115%;
   }
+  :root{
+    --mid-font-size : 12px;
+    --mid-font-weight: 100;
+    --xxl-font-size:  20px;
+    --xxl-font-weight: 300;
+    --lrg-font-size:10px;
+    --lrg-font-weight:300;
+}
+.res{
+    width: 50%;
+}
+.blogs{
+    margin-bottom: 20px;
+}
+.heading{
+    position: relative;
+    top: -7%;
+    width: 70%;
+}
+.hbtn{
+    padding: 8px;
+    margin-left: -20%;
+    margin-top: 10px;
+}
+.aboutUs{
+    height: 45rem;
+}
+.content{
+    padding-top: 20px;
+}
+.log{
+    right: -3%;
+}
 }
 
 
@@ -276,7 +554,10 @@
 .formContainer{
     width: 65%;
     grid-template-columns: 90%;
-
 }
 
 }
+
+
+
+

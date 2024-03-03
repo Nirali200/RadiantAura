@@ -13,8 +13,7 @@
   --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
   --gray-shade:rgb(234, 225, 225);
   --white-backGround:rgba(255, 255, 255, 0.605);
-   
-
+  --about-font-size: 1.8vw;
 }
 
 .active{
@@ -150,7 +149,6 @@
   background: url("../images/homeBack.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   margin: 0 15px;
 }
@@ -192,14 +190,12 @@
 
 
 .aboutUs{
-
     position: relative;
     top: 70px;
     display: flex;
     gap: 10%;
     height: 40vw;
     padding: 15px;
-
 }
 
 .aboutlft{
@@ -237,7 +233,7 @@
 
 @keyframes title-flow{
     0%{
-        width: 0px;
+        width: 0;
         color: transparent;
     }
     50%{
@@ -254,7 +250,7 @@
     align-items: center;
     justify-content: center;
     height: 50%;
-    font-size: var(--lrg-font-size);
+    font-size: var(--about-font-size);
     padding: 30px 20px 0px 0px;
     font-weight: var(--lrg-font-weight);
 }
@@ -267,7 +263,7 @@
     position: relative;
     top: 70px;
     padding: 15px;
-    height: 42vw;
+    height: 35vw;
 }
 
 .btitle{
@@ -344,30 +340,26 @@
 
 
 .related{
-    position: relative;
-    top: 50px;
     padding: 10px;
     height: 40vw;
 }
-
 .related-wrap{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #lftbtn,#rigtbtn{
     height: 50px;
     width: 50px;
     cursor: pointer;
-}
-
-
+}   
 .recTitle{
     display: flex;
     justify-content: center;
     font-size: var(--xxl-font-size);
     font-weight: var(--xxl-font-weight);
+    margin-top: 8%;
     margin-bottom: 8px;
 }
 
@@ -432,14 +424,13 @@
 }
 
 .recommanded{
-    height: 53vw;
+    height: 55rem;
     display: block;
     background:url("../images/back_att.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25px;
-
 }
 
 .types{
@@ -464,7 +455,7 @@
 }
 .type_wrap img{
     height: 300px;
-    width: 400px;
+    width: 90%;
 }
 .type_wrap:hover{
     border: 2px solid var(--btn-border);
@@ -563,7 +554,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     height: 35vw;
     background-image: url("../images/login_back.jpg");
     background-attachment: fixed;
@@ -633,9 +623,11 @@
 }
 
 
+
+
+
 .footer{
-    position: relative;
-    top: 200px;
+    margin-top: 20%;
     height: 375px;
     padding: 20px;
     background: linear-gradient(rgba(185, 111, 150, 0.492), #e4dfdf);
@@ -658,7 +650,6 @@
 
 .main::after{
 content: "";
-
 }
 
 .main p{
@@ -678,6 +669,8 @@ content: "";
 }
 
 .footerInfo{
+    position: relative;
+    top: 0;
     display: flex;
     justify-content: center;
     background-color:  var(--white-backGround);
