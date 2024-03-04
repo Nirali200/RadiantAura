@@ -74,4 +74,9 @@ const logOut = (req,res) => {
 }
 
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut }
+const logedIn = (req,res) =>{
+    res.render('LogedIn.ejs');
+}
+
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn }

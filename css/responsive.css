@@ -60,6 +60,11 @@
     .logContain{
         height: 28rem;
     }
+    .pimg{
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+    }
 
 }
 
@@ -74,6 +79,7 @@
         --lrg-font-size:23px;
         --lrg-font-weight:300;
         --about-font-size:1.7vw;
+        --blogs-font-size:1vw;
     }
     .navLeftResp{
         position: absolute;
@@ -177,6 +183,12 @@
         --xxl-font-weight: 300;
         --lrg-font-size:15px;
         --lrg-font-weight:300;
+        --blogs-font-size:1.3vw;
+        --blogs-title-font-size:15px;   
+
+    }
+    .name{
+        margin: 5%;
     }
     .home{
         width: 95%;
@@ -225,6 +237,11 @@
         height: 20px;
         width: 19px;
     }
+    .pimg{
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+    }
     .footer{
         height: 335px;
        padding: 17px;
@@ -243,6 +260,11 @@
     }
     .login label{
         margin-left: 15px;
+    }
+    .profileImg{
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
     }
     .footerInfo{
         margin-top: -2%;
@@ -301,6 +323,12 @@
 }
 
 @media only screen and (max-width:734px){
+    :root{
+        --blogs-title-font-size:13px;
+    }
+    .formContainer{
+        height: 400px;
+    }
     .footer{
         height: 280px;
         padding: 15px;
@@ -346,9 +374,11 @@
         --mid-font-weight: 100;
         --xxl-font-size:  20px;
         --xxl-font-weight: 300;
-        --lrg-font-size:12px;
+        --lrg-font-size:15px;
         --lrg-font-weight:300;
         --about-font-size: 1.9vw;
+        --blogs-font-size:1.5vw;
+        --blogs-title-font-size:9px;
     }
      /* ---cross--- */
     .lin1,.lin2{
@@ -360,11 +390,17 @@
         top: 0;
         width: 200px;
     }
+    .details{
+        grid-template-columns: 130px auto;
+    }
     .aboutUs{
         height: 50vw;
     }
     .content{
     padding: 25px 20px 0px 0px;
+    }
+    .name{
+        margin: 2%;
     }
     .res{
         display: block;
@@ -412,14 +448,35 @@
         --mid-font-weight: 100;
         --xxl-font-size:  20px;
         --xxl-font-weight: 300;
-        --lrg-font-size:12px;
+        --lrg-font-size:15px;
         --lrg-font-weight:300;
         --about-font-size: 15px;
+        --blogs-font-size:3.8vw;
+        --blogs-title-font-size:20px;
+    }
+    .details{
+        height: 60vh;
+    }
+    .name{
+        margin: 20px;
     }
     .navLeftResp{
         position: absolute;
         top: 0;
         width: 140px;
+    }
+    .pimg{
+        height: 27px;
+        width: 27px;
+        border-radius: 27px;
+    }
+    .profileImg{
+        height: 180px;
+        width: 180px;
+        border-radius: 180px;
+    }
+    .profile{
+        height: 250px;
     }
     .home{
         height: 20rem;
@@ -471,10 +528,13 @@
         height: 75rem;
 
     }
-
     .res{
         display: block;
         width: 45%;
+    }
+    .formContainer{
+        height: 350px;
+        font-weight: 400;
     }
     .formContainer textarea{
         height: 100px;
@@ -508,6 +568,18 @@
     --xxl-font-weight: 300;
     --lrg-font-size:10px;
     --lrg-font-weight:300;
+}
+.formContainer{
+    gap: 0;
+}
+.lable{
+    margin: -10px 0px;
+}
+.input{
+    margin: -8px 0px;
+}
+.formContainer textarea{
+    height: 90px;
 }
 .res{
     width: 50%;

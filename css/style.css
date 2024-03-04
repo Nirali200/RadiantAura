@@ -13,7 +13,9 @@
   --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
   --gray-shade:rgb(234, 225, 225);
   --white-backGround:rgba(255, 255, 255, 0.605);
-  --about-font-size: 1.8vw;
+  --about-font-size: 1.5vw;
+  --blogs-title-font-size:23px;
+  --blogs-font-size:1vw;
 }
 
 .active{
@@ -140,6 +142,11 @@
     font-weight: var(--mid-font-weight);
 }
 
+.pimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
 
 
 
@@ -211,6 +218,7 @@
     display: flex;
     flex-direction: column;
     gap: 5%;
+    padding-right: 5px;
 }
 
 .title{
@@ -310,14 +318,13 @@
 }
 
 .name{
-    font-size: var(--lrg-font-size);
+    font-size: var(--blogs-title-font-size);
     font-weight: var(--lrg-font-weight);
     margin: 20px;
-    
 }
 
 .blog{
-    font-size: var(--mid-font-size);
+    font-size: var(--blogs-font-size);
     font-weight: var(--mid-font-weight);
     margin: 10px;
 
@@ -420,7 +427,7 @@
 
 .products{
     position: relative;
-    top: 170px;
+    top: 100px;
 }
 
 .recommanded{
@@ -677,3 +684,71 @@ content: "";
 }
 
 
+
+
+
+
+
+
+.profile{
+   height: 300px;
+   width: 100%;
+   background: url('../images/back.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   border: 2px solid var(--background-color);
+   margin: 25px 0px;
+   display: flex;
+}
+
+.profileImg{
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    margin: 150px auto;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 200px auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 100px;
+    background-color: rgba(224, 151, 178, 0.118);
+    border-radius: 15px;
+}
+
+.verify{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 25px;
+}
+
+.plab{
+    font-size: var(--lrg-font-size);
+    font-weight: var(--lrg-font-weight);
+}
+
+.pinp:active,.pinp:focus-visible,.otp input:active,.otp input:focus-visible{
+    outline: 1px solid var(--btn-border);
+    border: 1px solid var(--btn-border);
+    border-radius: 3px;
+}
+.pinp{
+    padding: 3px 5px;
+}
+.otpver{
+    display: none;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.otp{
+    margin: auto;
+}
+
+.otp input{
+    width: 25px;
+}

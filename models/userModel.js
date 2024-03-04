@@ -11,7 +11,18 @@ const userSchema  =  new mongoose.Schema({
     type:String,
     required:true,
     select:false
+    },
+    userProfile:{
+        type:String,
+        required:false
+    },
+    email:{
+        type:String
+    },
+    Phone:{
+        type:Number
     }
+
 })
 
 module.exports = mongoose.model("users",userSchema);
