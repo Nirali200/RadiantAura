@@ -9,11 +9,15 @@
     <title>NPoint - Signin</title>
 </head>
 <body>
-    <div class="logContain">
-    <div class="logTitl">Sign In</div>
+    <div class="logContain registers">
+    <div class="logTitl ">Sign In</div>
         <form  class="login" action="/register" method="post">
             <label class="loglab">UserName : </label>
             <input name="UserName" type="text">
+            <label class="loglab">Email : </label>
+            <input name="email" type="text">
+            <label class="loglab">Phone : </label>
+            <input name="Phone" type="text">
             <label class="loglab"> Set Password :</label>
             <input name="Password" type="password">
             <p class="error"><%= locals.message %></p>

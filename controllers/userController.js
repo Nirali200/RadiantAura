@@ -1,3 +1,4 @@
+const cookieParser = require('cookie-parser');
 const users = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcript = require('bcrypt');
@@ -8,7 +9,7 @@ const getRegistration =  (req,res) =>{
 }
 
 const postRegistration = async(req,res) =>{
-    const { UserName , Password} = req.body;
+    const { UserName , email , Phone, Password} = req.body;
     
     let user = await users.findOne({UserName});
     if(user){
@@ -17,15 +18,14 @@ const postRegistration = async(req,res) =>{
     const hashPassword = await bcript.hash(Password,10);
     
     
-    user = await users.create({UserName,Password : hashPassword});
+    user = await users.create({UserName,email,Phone,Password : hashPassword});
     const token = jwt.sign({_id:user._id},process.env.SECRET_STRING)
     
     res.cookie("token",token,{
         httpOnly:true,
-        expires: new Date(Date.now() + 60*1000), 
+        expires: new Date(Date.now() + 600*1000), 
     })
-    res.redirect('/login/check');
-    return res.render("LogOut",{UserName});
+    res.redirect('/login/home');
 }
 
 const getLogin = (req,res) =>{
@@ -35,7 +35,8 @@ const getLogin = (req,res) =>{
 
 const checkAuth = (req,res) => {
     const {UserName} = req.user;
-    res.render("LogOut",{UserName});
+    let profile = true;
+    res.render("Home.ejs",{UserName,profile});
 }
 
 
@@ -46,7 +47,7 @@ const postLogin = async(req,res) => {
     let user = await users.findOne({UserName}).select("+Password");
 
     if(!user){
-     return res.redirect("/register");
+     return res.render("Login.ejs",{message:"User Not Exist!!"});
     }
 
     const isMatch = await bcript.compare(Password,user.Password);
@@ -61,7 +62,7 @@ const postLogin = async(req,res) => {
         httpOnly:true,
         expires: new Date(Date.now() + 60*1000), 
     })
-    res.redirect('/login/check');
+    res.redirect('/login/home');
 }
 
 
@@ -70,12 +71,19 @@ const logOut = (req,res) => {
         httpOnly:true,
         expires: new Date(Date.now()), 
     })
-    res.redirect('/login/check');
+    res.redirect('/home');
 }
 
 
-const logedIn = (req,res) =>{
-    res.render('LogedIn.ejs');
+
+const logedIn = async (req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+    }
+    res.render('LogedIn.ejs',{user});
 }
 
 

@@ -93,6 +93,9 @@
         display: block;
         width: 30%;
     }
+    .profile{
+        height: 35vw;
+    }
     .navbar{
         height: 30%;
     }
@@ -201,6 +204,9 @@
     .b-container{
         top: 15%;
     }
+    .profile{
+        height: 40vw;
+    }
     .blogs{
         top: 65px;
     }
@@ -236,6 +242,12 @@
     .search{
         height: 20px;
         width: 19px;
+    }
+    .profile{
+        margin-bottom: 80px;
+    }
+    .details{
+        height: 45vh;
     }
     .pimg{
         height: 30px;
@@ -285,6 +297,11 @@
         height: 20%;
         width: 50%;
     }
+    .profileImg{
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+    }
     #lftbtn,#rigtbtn{
        display: none;
     }
@@ -325,6 +342,7 @@
 @media only screen and (max-width:734px){
     :root{
         --blogs-title-font-size:13px;
+        --profile-font-size:15px;
     }
     .formContainer{
         height: 400px;
@@ -333,11 +351,25 @@
         height: 280px;
         padding: 15px;
     }
+    .profile{
+        height: 45vw;
+    }
+    .profileImg{
+        height: 180px;
+        width: 180px;
+        border-radius: 180px;
+    }
     .footcontain{
         margin: 4% 4%;
     }
     .main{
         height: 120px;
+    }
+    .pinp{
+        height: 10px;
+    }
+    .vbtn{
+        padding: 5%;
     }
     
     }
@@ -353,6 +385,26 @@
     .footer{
         height: 250px;
     }
+    .outDetail{
+        flex-direction: column;
+        height: 400px;
+    }
+    .ebtn{
+        margin: auto;
+    }
+    .detail{
+        width: auto;
+        justify-content: center;
+    }
+    .profile{
+        height: 50vw;
+    }
+    .profileImg{
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        margin-top: -50px;
+    }
     .main{
         height: 90px;
     }
@@ -362,6 +414,10 @@
     }
     .products{
         top: 230px;
+    }
+    .details{
+        width: 70%;
+
     }
 }
 
@@ -390,8 +446,12 @@
         top: 0;
         width: 200px;
     }
+    .profile{
+        height: 43vw;
+    }
     .details{
         grid-template-columns: 130px auto;
+        width: 75%;
     }
     .aboutUs{
         height: 50vw;
@@ -454,8 +514,17 @@
         --blogs-font-size:3.8vw;
         --blogs-title-font-size:20px;
     }
+    .profile{
+        height: 90vw;
+        margin-bottom: 100px;
+    }
     .details{
         height: 60vh;
+        width: 350px;
+        grid-template-columns: 80px auto;
+    }
+    .outDetail{
+        height: 350px;
     }
     .name{
         margin: 20px;
@@ -471,12 +540,10 @@
         border-radius: 27px;
     }
     .profileImg{
-        height: 180px;
-        width: 180px;
-        border-radius: 180px;
-    }
-    .profile{
-        height: 250px;
+        height: 110px;
+        width: 110px;
+        border-radius: 110px;
+        margin-top: -50px;
     }
     .home{
         height: 20rem;

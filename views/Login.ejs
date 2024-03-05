@@ -51,7 +51,9 @@
             <input name="UserName" type="text" value= "<%= locals.UserName %>" placeholder="Name">
             <label class="loglab">Password :</label>
             <input name="Password" type="password" placeholder="Password...">
-            <p class="error"><%= locals.message %></p>
+            <% if(locals.message){%>
+                <p class="error"><%= locals.message %></p>
+            <%}%>
             <input type="submit" value="Log In" class="submitbtn logsub" >
         </form>
 </div>

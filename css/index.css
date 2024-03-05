@@ -5,3 +5,8 @@ body{
     padding: 0 20px;
     font-family: "Rubik", sans-serif;
 }
+
+::selection {
+    color: rgb(72, 7, 56);
+    background: rgba(224, 151, 178, 0.25);;
+  }

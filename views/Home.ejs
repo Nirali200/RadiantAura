@@ -25,7 +25,7 @@
                         <div class="lin1"></div>
                         <div class="lin2"></div>
                     </div> 
-                    <li class="lft"><a href="/home">Shop</a></li>
+                    <li class="lft"><a href="/login/home">Shop</a></li>
                     <li class="lft"><a href="/faq">FAQ</a></li>
                     <li class="lft"><a href="/contact">Contact</a></li>
                     <li class="lft resSerch"><a>Search</a></li>
@@ -40,7 +40,11 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
+                <% if(locals.profile){ %>
+                    <a class="log" href="/logined"><img class="pimg" src="../images/profile.png"></a>
+                <% }else  {%> 
                 <a class="log" href="/login">Log In</a>
+                <%} %>
             </div>
         </nav>
     </div>
@@ -214,7 +218,7 @@
     </div>
     <div class="navLeft footLi">   
         <ul>
-            <li class="lft"><a href="/home">Shop</a></li>
+            <li class="lft"><a href="/login/home">Shop</a></li>
             <li class="lft"><a href="/faq">FAQ</a></li>
             <li class="lft"><a href="/contact">Contact</a></li>
         </ul>

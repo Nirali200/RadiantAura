@@ -10,8 +10,23 @@ const isAuth = async(req,res,next) =>{
         next();
     }
     else{
-        res.render("Login");
+        res.redirect("/home");
     }
 }
 
-module.exports  =  isAuth;
+
+const isAuthCon = async(req,res,next) =>{
+    const {token} = req.cookies;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        req.user = await users.findById(decode._id);
+        next();
+    }
+    else{
+        res.render("Contact");
+    }
+}
+
+
+
+module.exports  =  {isAuth,isAuthCon} ;

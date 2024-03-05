@@ -6,9 +6,11 @@ const storeContacts =  async (req,res)=>{
     res.redirect('/contact');
 }
 
-
-const getContact = async (req,res) => {
-    res.render("Contact");
+const checkAuth = (req,res) => {
+    let profile = true;
+    res.render("Contact.ejs",{profile});
 }
 
-module.exports = {storeContacts,getContact};
+
+
+module.exports = {storeContacts,checkAuth};

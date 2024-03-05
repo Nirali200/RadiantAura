@@ -11,6 +11,18 @@ for(let i=3;i<li.length;i++){
 }
 }
 
+const err = document.querySelector('.error');
+let time=0;
+if(err){
+let timer = setInterval(()=>{
+    time++;
+    if(time==5){
+        clearInterval(timer);
+        err.style.display = "none";
+    }
+},1000)}
+
+
 if(document.querySelector('.log').href.includes(pathName)){
     document.querySelector('.log').classList.add('active');
 }

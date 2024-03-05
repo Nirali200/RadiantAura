@@ -9,20 +9,67 @@
     <title>Npoint - Profile</title>
 </head>
 <body >
+    <div class="w-container">
+        <nav class="navbar">
+            <div class="hamburger burgerRes">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="res">
+            </div>
+            <div class="navLeft navLeftResp navLeftres">  
+                <ul>
+                    <div class="cross cross-res"> 
+                        <div class="lin1"></div>
+                        <div class="lin2"></div>
+                    </div> 
+                    <li class="lft"><a href="/login/home">Shop</a></li>
+                    <li class="lft"><a href="/faq">FAQ</a></li>
+                    <li class="lft"><a href="/contact">Contact</a></li>
+                    <li class="lft resSerch"><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="logo">NPoint</div>
+            <div class="navRight">
+                <div class="box">
+                    <input type="text" placeholder="Search.....">
+                    <img class="search" src="../images/search.png">
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <a class="log" href="/logOut">Log Out</a>
+            </div>
+        </nav>
+    </div>
+
     <div class="profile">
+      <div class="outDetail">
         <img src="../images/profile.png" class="profileImg"></img>
+        <div class="detail">
+            <p class="username"><%= locals.user.UserName %></p>
+            <label class="plab">Email:</label>
+            <p><%= locals.user.email %></p>
+            <label class="plab">Phone:</label>
+            <p><%= locals.user.Phone %></p>
+            <input class="ebtn" type="button" value="Edit">
+        </div>
+        </div>
     </div>
-    <div class="details">
+   
+    <!-- <form class="details edited" action="/edit">
         <label class="plab">Full Name:</label>
-        <input class="pinp" type="text" placeholder="Name" readonly>
+        <input class="pinp" type="text" placeholder="Name">
         <label class="plab">Email:</label>
-        <input class="pinp" type="text" placeholder="Mail" readonly>
+        <input class="pinp" type="text" placeholder="Mail">
         <label class="plab">Phone:</label>
-        <input class="pinp" type="text" placeholder="Phone" readonly>
+        <input class="pinp" type="text" placeholder="Phone">
         <label class="plab">Password:</label>
-        <input class="pinp" type="password" placeholder="Password" readonly>
-    </div>
-    <div class="verify">
+        <input class="pinp" type="password" placeholder="Password">
+    </form> -->
+    
+    <!-- <div class="verify">
     <span class="otpver">
         <p>OTP has been sended to your mail-box.</p>
         <div class="otp">
@@ -32,8 +79,8 @@
             <input type="text">
         </div>
     </span>
-    <input class="vbtn submitbtn" type="button" value="Verify">
-    </div>
+    <input class="vbtn submitbtn" type="button" value="Edit">
+    </div> -->
 </body>
 <script src="../js/logedIn.js">
     
