@@ -93,8 +93,12 @@
         display: block;
         width: 30%;
     }
+    .registers{
+        height: 60vw !important;
+    }
     .profile{
         height: 35vw;
+        margin-bottom: 150px;  
     }
     .navbar{
         height: 30%;
@@ -163,6 +167,9 @@
     .main{
     height: 160px;
     }
+    .editProf,.outEdit{
+        height: 40vw;
+    }
     .footerInfo{
     top: -8%;
     }
@@ -206,6 +213,7 @@
     }
     .profile{
         height: 40vw;
+        margin-bottom: 170px;
     }
     .blogs{
         top: 65px;
@@ -243,9 +251,6 @@
         height: 20px;
         width: 19px;
     }
-    .profile{
-        margin-bottom: 80px;
-    }
     .details{
         height: 45vh;
     }
@@ -264,6 +269,9 @@
     .main{
     height: 140px;
     }
+    .logContain{
+        height: 32rem;
+    }
     .login,.logOut{
         width: 300px;
     }
@@ -272,6 +280,9 @@
     }
     .login label{
         margin-left: 15px;
+    }
+    .profile{
+        margin-bottom: 250px;
     }
     .profileImg{
         height: 200px;
@@ -293,9 +304,20 @@
     .home{
         height: 50vw;
     }
+    .registers{
+        height: 80vw !important;
+    }
     .title{
         height: 20%;
         width: 50%;
+    }
+    .details{
+        width: 65%;
+    }
+    .editImg{
+    height: 150px !important;
+        width: 150px !important;
+        border-radius: 150px !important;
     }
     .profileImg{
         height: 200px;
@@ -351,8 +373,15 @@
         height: 280px;
         padding: 15px;
     }
+    
+    .editImg{
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+    }
     .profile{
         height: 45vw;
+        margin-bottom: 250px;
     }
     .profileImg{
         height: 180px;
@@ -368,10 +397,12 @@
     .pinp{
         height: 10px;
     }
-    .vbtn{
-        padding: 5%;
+    .editProf,.outEdit{
+        height: 45vw;
     }
-    
+    .details{
+        grid-template-columns: 100px auto;
+    }
     }
 
 @media only screen and (max-width:659px){
@@ -392,12 +423,23 @@
     .ebtn{
         margin: auto;
     }
+    .registers{
+        height: 100vw !important;
+    }
+    .reg{
+        gap: 10px !important;
+    }
     .detail{
         width: auto;
         justify-content: center;
     }
     .profile{
+        margin-bottom: 290px;
         height: 50vw;
+    }
+    .editImg{
+        margin-top: auto !important;
+
     }
     .profileImg{
         height: 150px;
@@ -416,8 +458,11 @@
         top: 230px;
     }
     .details{
-        width: 70%;
-
+        width: 65%;
+    }
+    
+    .editProf,.outEdit{
+        height: 60vw;
     }
 }
 
@@ -447,11 +492,26 @@
         width: 200px;
     }
     .profile{
+        margin-bottom: 400px;
         height: 43vw;
     }
     .details{
-        grid-template-columns: 130px auto;
-        width: 75%;
+        width: 60%;
+        grid-template-columns:auto;
+    }
+    .editImg{
+        height: 120px !important;
+        width: 120px !important;
+        border-radius: 120px !important;
+    }
+    .editProf,.outEdit{
+        height: 65vw;
+    }
+    .outEdit{
+        width: 80%;
+    }
+    .elab{
+        font-weight: 300;
     }
     .aboutUs{
         height: 50vw;
@@ -479,7 +539,7 @@
         height: 3.5px;
     }
     .logContain{
-        height: 25rem;
+        height: 30rem;
     }
     .login,.logOut{
         width: 70%;
@@ -516,12 +576,19 @@
     }
     .profile{
         height: 90vw;
-        margin-bottom: 100px;
+        margin-bottom: 250px;
+    }
+    .editProf,.outEdit{
+        height: 90vw;
     }
     .details{
-        height: 60vh;
-        width: 350px;
-        grid-template-columns: 80px auto;
+        height: 200px;
+    }
+    .registers{
+        height: 120vw !important;
+    }
+    .reg{
+        gap: 5px !important;
     }
     .outDetail{
         height: 350px;
@@ -639,11 +706,29 @@
 .formContainer{
     gap: 0;
 }
+.registers{
+    height: 127vw !important;
+}
+.reg{
+    gap: 0px !important;
+}
 .lable{
     margin: -10px 0px;
 }
 .input{
-    margin: -8px 0px;
+  margin: -8px 0px;
+}
+.editProf,.outEdit{
+    height: 120vw;
+}
+.outEdit{
+    width: 90%;
+}
+.details{
+    gap: 2px;
+}
+.elab{
+    font-size: medium;
 }
 .formContainer textarea{
     height: 90px;

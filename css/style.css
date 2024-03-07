@@ -629,6 +629,17 @@
   font-weight: var(--mid-font-weight);
   color: red;
 }
+.signUp a{
+    text-decoration: none;
+    color: var(--btn-border);
+    cursor: pointer;
+}
+
+.signUp{
+    font-size: var(--profile-font-size);
+    justify-self: center;
+}
+
 
 .logOut{
     height: 100px !important;
@@ -691,29 +702,32 @@ content: "";
 }
 
 
-
-
-
-
-
-
 .profile{
    height: 25vw;
    width: 100%;
-   background: url('../images/back.jpg');
-   background-size: cover;
-   background-attachment: fixed;
-   border: 2px solid var(--background-color);
+   background:linear-gradient(336deg, var(--btn-border), #333134);
    margin: 25px auto;
    margin-bottom: 120px;
+   margin: auto;
    display: flex;
    justify-content: center;
 }
 
+.editProf{
+   background:linear-gradient(336deg, var(--btn-border), #333134);
+   height: 550px;
+   margin: 25px auto;
+   margin-bottom: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-bottom: 20px;
+}
+
 .outDetail{
     width: 70%;
-    display: flex;
-    background-color: rgba(224, 151, 178, 0.895);
+    display: flex;    
+    background: linear-gradient(336deg, var(--background-color), #cfc2d3);
     border-radius: 15px;
     margin-top: 150px;
     height: 350px;
@@ -729,6 +743,13 @@ content: "";
 
 .leftd{
     width: 50%;
+}
+
+.outEdit{
+    width: 70%;
+    display: flex; 
+    height: 500px;
+    margin: auto;
 }
 
 .detail{
@@ -748,7 +769,7 @@ content: "";
     justify-content: center;
     align-items: center;
     height: 250px;
-    margin: auto;
+    margin: auto 0px;
     border-radius: 15px;
 }
 .username{
@@ -771,11 +792,24 @@ content: "";
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-
+    border:  1px  solid transparent;
+    outline: 1px solid transparent;
+}
+.ebtn:hover{
+    color: var(--btn-border);
+    border: 1px solid var(--btn-border);
+    outline:1px solid var(--btn-border);
 }
 .plab{
     font-size:  var(--profile-font-size);
     font-weight: var(--lrg-font-weight);
+    margin-bottom: -20px;
+}
+.vbtn{
+  margin: auto;
+}
+.elab{
+    margin-bottom: 0px !important;
 }
 .bvtn{
     padding: 10px;
@@ -788,10 +822,14 @@ content: "";
 }
 .pinp{
     padding: 3px 5px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.pinp::placeholder{
+    color: #cfc2d3b6;
 }
 .pinp{
-    border: 1px solid transparent;
-    outline:  1px solid transparent;
+    border: 1px solid #cfc2d3;
 }
 .otpver{
     display: none;
@@ -805,3 +843,10 @@ content: "";
 .otp input{
     width: 25px;
 }
+
+
+.err{
+    color: red;
+    margin: auto;
+}
+

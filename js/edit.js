@@ -1,13 +1,4 @@
 
-// const ver = document.querySelector('.vbtn');
-// const details = document.querySelectorAll('.details');
-
-// ver.addEventListener('click',()=>{
-//         details[1].classList.remove('edited');
-//         details[0].classList.add('profdetails');
-//         ver.value="Submit";
-// })
-
 burger = document.querySelector('.hamburger');
 navLeft = document.querySelector('.navLeft');
 navLeftUl = document.querySelector('.navLeft').childNodes[1];
@@ -29,3 +20,11 @@ cross.addEventListener('click',()=>{
 })
 
 const otpBlock = document.querySelector('.otpver');
+
+
+const err = document.querySelector('.err');
+if(err){
+    setTimeout(()=>{
+        err.style.display="none";
+    },5000);
+}

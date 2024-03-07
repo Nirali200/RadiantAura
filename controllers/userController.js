@@ -23,9 +23,9 @@ const postRegistration = async(req,res) =>{
     
     res.cookie("token",token,{
         httpOnly:true,
-        expires: new Date(Date.now() + 600*1000), 
+        expires: new Date(Date.now() + 3600*1000), 
     })
-    res.redirect('/login/home');
+    res.redirect('/');
 }
 
 const getLogin = (req,res) =>{
@@ -60,9 +60,9 @@ const postLogin = async(req,res) => {
 
     res.cookie("token",token,{
         httpOnly:true,
-        expires: new Date(Date.now() + 60*1000), 
+        expires: new Date(Date.now() + 3600*1000), 
     })
-    res.redirect('/login/home');
+    res.redirect('/');
 }
 
 
@@ -71,10 +71,20 @@ const logOut = (req,res) => {
         httpOnly:true,
         expires: new Date(Date.now()), 
     })
-    res.redirect('/home');
+    res.redirect('/');
 }
 
-
+const edit = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {UserName,email,Phone} = user;
+        return res.render('Edit.ejs',{UserName,email,Phone});
+    }
+    res.redirect('/');
+}
 
 const logedIn = async (req,res) =>{
     const {token} = req.cookies;
@@ -82,9 +92,34 @@ const logedIn = async (req,res) =>{
     if(token){
         const decode  = jwt.verify(token,process.env.SECRET_STRING);
         user = await users.findById(decode._id);
+        const {UserName,email,Phone} = user;
+        return res.render('LogedIn.ejs',{UserName,email,Phone});
     }
-    res.render('LogedIn.ejs',{user});
+    res.redirect('/');
 }
 
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn }
+const editPost = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id).select("+Password");
+        const {UserName,email,Phone,Password} = user;
+        const {userName,phone,password} = req.body;
+        const isMatch = await bcript.compare(password,Password);
+        if(!isMatch){ 
+            return res.render("Edit",{UserName,email,Phone,message: "Incorrect Password !!!" });
+        }
+        await users.findByIdAndUpdate({_id:user._id},{$set:{
+            UserName : userName || user.UserName,
+            Phone : phone || user.Phone,
+            Image : req.file.filename || null
+        }});
+        return res.redirect('/edit');
+    }
+    res.redirect('/');
+}
+
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost };

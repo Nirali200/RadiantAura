@@ -10,7 +10,7 @@ const isAuth = async(req,res,next) =>{
         next();
     }
     else{
-        res.redirect("/home");
+        res.render('Home.ejs');
     }
 }
 

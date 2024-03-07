@@ -16,10 +16,10 @@ app.use("/css",express.static(path.join(path.resolve(),"/css")));
 app.use("/images",express.static(path.join(path.resolve(),"/images")));
 app.use("/js",express.static(path.join(path.resolve(),"/js")));
 app.set("view engine","ejs");
-app.use(require('./routs/contactRout.js'));
+app.use(require('./routs/contactRout.js'))
 app.use(require('./routs/userRout.js'));
 
-app.get("/home",(req,res) =>{ 
+app.get("/",(req,res) =>{ 
     res.render("Home");
 })
 
