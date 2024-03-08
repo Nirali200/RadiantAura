@@ -34,9 +34,9 @@ const getLogin = (req,res) =>{
 
 
 const checkAuth = (req,res) => {
-    const {UserName} = req.user;
+    const {UserName,Image} = req.user;
     let profile = true;
-    res.render("Home.ejs",{UserName,profile});
+    res.render("Home.ejs",{UserName,profile,Image});
 }
 
 
@@ -80,8 +80,8 @@ const edit = async(req,res) =>{
     if(token){
         const decode  = jwt.verify(token,process.env.SECRET_STRING);
         user = await users.findById(decode._id);
-        const {UserName,email,Phone} = user;
-        return res.render('Edit.ejs',{UserName,email,Phone});
+        const {UserName,email,Phone,Image} = user;
+        return res.render('Edit.ejs',{UserName,email,Phone,Image});
     }
     res.redirect('/');
 }
@@ -92,8 +92,8 @@ const logedIn = async (req,res) =>{
     if(token){
         const decode  = jwt.verify(token,process.env.SECRET_STRING);
         user = await users.findById(decode._id);
-        const {UserName,email,Phone} = user;
-        return res.render('LogedIn.ejs',{UserName,email,Phone});
+        const {UserName,email,Phone,Image} = user;
+        return res.render('LogedIn.ejs',{UserName,email,Phone,Image});
     }
     res.redirect('/');
 }
@@ -105,16 +105,17 @@ const editPost = async(req,res) =>{
     if(token){
         const decode  = jwt.verify(token,process.env.SECRET_STRING);
         user = await users.findById(decode._id).select("+Password");
-        const {UserName,email,Phone,Password} = user;
+        const {UserName,email,Phone,Password,Image} = user;
         const {userName,phone,password} = req.body;
         const isMatch = await bcript.compare(password,Password);
-        if(!isMatch){ 
-            return res.render("Edit",{UserName,email,Phone,message: "Incorrect Password !!!" });
+        if(!isMatch){
+            console.log(Image);
+            return res.render("Edit",{UserName,email,Phone,Image,message: "Incorrect Password !!!" });
         }
         await users.findByIdAndUpdate({_id:user._id},{$set:{
+            Image : req.file.filename || user.Image,
             UserName : userName || user.UserName,
-            Phone : phone || user.Phone,
-            Image : req.file.filename || null
+            Phone : phone || user.Phone
         }});
         return res.redirect('/edit');
     }

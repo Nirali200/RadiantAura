@@ -170,6 +170,9 @@
     .editProf,.outEdit{
         height: 40vw;
     }
+    .photo{
+        height:65%;
+    }
     .footerInfo{
     top: -8%;
     }
@@ -315,9 +318,12 @@
         width: 65%;
     }
     .editImg{
-    height: 150px !important;
+        height: 150px !important;
         width: 150px !important;
         border-radius: 150px !important;
+    }
+    .photo{
+        height:68%;
     }
     .profileImg{
         height: 200px;
@@ -460,7 +466,9 @@
     .details{
         width: 65%;
     }
-    
+    .photo{
+        height:50%;
+    }
     .editProf,.outEdit{
         height: 60vw;
     }
@@ -679,7 +687,9 @@
     .main{
         height: 100px;
     }
-
+    .photo{
+        height: 47%;
+    }
     .footLi{
     margin-bottom: 5px;
     }

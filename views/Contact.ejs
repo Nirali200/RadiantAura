@@ -41,7 +41,12 @@
                     </a>
                 </div>
                 <% if(locals.profile){ %>
-                    <a class="log" href="/logined"><img class="pimg" src="../images/profile.png"></a>
+                    <a class="log" href="/logined">
+                        <% if(locals.Image == undefined){%>
+                        <img src="../images/profile.png" class="pimg"></img>
+                        <%} else { %>
+                        <img src="../userImages/userImg/<%=locals.Image%>" class="pimg"></img>
+                        <%} %></a>
                 <% }else  {%> 
                 <a class="log" href="/login">Log In</a>
                 <%} %>

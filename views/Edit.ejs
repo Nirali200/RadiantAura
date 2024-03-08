@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css"  href="../css/index.css">
     <link rel="stylesheet" type="text/css"  href="../css/style.css">
     <link rel="stylesheet" type="text/css"  href="../css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
                         <div class="lin1"></div>
                         <div class="lin2"></div>
                     </div> 
-                    <li class="lft"><a href="/login/home">Shop</a></li>
+                    <li class="lft"><a href="/">Shop</a></li>
                     <li class="lft"><a href="/faq">FAQ</a></li>
                     <li class="lft"><a href="/contact">Contact</a></li>
                     <li class="lft resSerch"><a>Search</a></li>
@@ -44,11 +45,18 @@
         </nav>
     </div>
 
-    <form class="editProf" method="post" action="/edit" >
+    <form class="editProf" method="post" action="/edit" enctype="multipart/form-data">
         <div class="outEdit">
-            <div>
+            <div class="photo">
+            <% if(locals.Image == undefined){%>
             <img src="../images/profile.png" class="profileImg editImg"></img>
-            <input type="file" name="image">
+            <%} else { %>
+            <img src="../userImages/userImg/<%=locals.Image%>" class="profileImg editImg"></img>
+            <%} %>
+            <input type="file" name="image" id="imgId">
+            <label for="imgId" class="file"><span class="material-symbols-outlined">
+                add_a_photo
+                </span>&nbsp; Add Photo </label>
             </div>
             <div class="details">
                 <label class="plab elab">Full Name:</label>

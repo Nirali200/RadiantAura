@@ -46,7 +46,11 @@
 
     <div class="profile">
       <div class="outDetail">
-        <img src="../images/profile.png" class="profileImg"></img>
+        <% if(locals.Image == undefined){%>
+            <img src="../images/profile.png" class="profileImg editImg"></img>
+            <%} else { %>
+            <img src="../userImages/userImg/<%=locals.Image%>" class="profileImg editImg"></img>
+        <%} %>
         <form class="detail" action="/edit">
             <p class="username"><b><%= locals.UserName %></b></p>
             <label class="plab">Email:</label>
