@@ -1,16 +1,4 @@
 
-const err = document.querySelector('.error');
-if(err){
-    setTimeout(()=>{
-        err.style.display="none";
-    },5000);
-}
-
-
-if(document.querySelector('.log').href.includes(pathName)){
-    document.querySelector('.log').classList.add('active');
-}
-
 burger = document.querySelector('.hamburger');
 navLeft = document.querySelector('.navLeft');
 navLeftUl = document.querySelector('.navLeft').childNodes[1];

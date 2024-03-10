@@ -123,4 +123,14 @@ const editPost = async(req,res) =>{
 }
 
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost };
+const getFaq =async(req,res) =>{
+    const {token} = req.cookies;
+    let profile = false;
+    if(token){
+        profile = true;
+    }
+    res.render("Faq",{profile});
+}
+
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq };

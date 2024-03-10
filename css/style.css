@@ -396,6 +396,7 @@
 .media a{
     text-decoration: none;
     color: rgba(105, 105, 105, 0.781);
+    cursor: pointer;
 }
 
 .media{
@@ -652,7 +653,7 @@
 
 
 .footer{
-    margin-top: 20%;
+    margin-top: 10%;
     height: 375px;
     padding: 20px;
     background: linear-gradient(rgba(185, 111, 150, 0.492), #e4dfdf);
@@ -892,3 +893,14 @@ input[type ='file']{
     margin: auto;
 }
 
+
+
+
+.ftitle{
+    display: flex;
+    justify-content: center;
+}
+
+.ansr{
+    color: rgba(105, 105, 105, 0.781);
+}

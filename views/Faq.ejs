@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="../css/index.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css"  href="../css/responsive.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <div class="w-container">
+        <nav class="navbar">
+            <div class="hamburger burgerRes">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="res">
+            </div>
+            <div class="navLeft navLeftResp navLeftres">  
+                <ul>
+                    <div class="cross cross-res"> 
+                        <div class="lin1"></div>
+                        <div class="lin2"></div>
+                    </div> 
+                    <li class="lft"><a href="/">Shop</a></li>
+                    <li class="lft"><a class="active" href="/faq">FAQ</a></li>
+                    <li class="lft"><a href="/contact">Contact</a></li>
+                    <li class="lft resSerch"><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="logo">NPoint</div>
+            <div class="navRight">
+                <div class="box">
+                    <input type="text" placeholder="Search.....">
+                    <img class="search" src="../images/search.png">
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <% if(locals.profile){ %>
+                    <a class="log" href="/logined"><% if(locals.Image == undefined){%>
+                        <img src="../images/profile.png" class="pimg"></img>
+                        <%} else { %>
+                        <img src="../userImages/userImg/<%=locals.Image%>" class="pimg"></img>
+                        <%} %></a>
+                <% }else  {%> 
+                <a class="log" href="/login">Log In</a>
+                <%} %>
+            </div>
+        </nav>
+    </div>
+
+    <div class="ftitle">
+        <h1>Your Right To Know</h1>
+    </div>
+
+
+    <div class="related-wrap">
+        <img id="lftbtn" src="../images/lftbtn.png">
+        <div class="media-scroller  snaps-inline">
+            <div class="media">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus fugit deserunt, alias tenetur voluptate, aperiam laudantium dolor cumque rem voluptates cupiditate? Maiores, quibusdam ab natus nemo eum amet officia?</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam ad in inventore odit fuga architecto, nemo dolor consequuntur consequatur beatae eveniet iste unde... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, moll... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dol... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolores aut voluptat... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolo... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolores aut volupta... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolores aut voluptat... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolores aut... </p>
+                <a>See More</a>
+            </div>
+            <div class="media">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aliquam porro nisi explicabo molestiae sed officia. Nihil, debitis. Hic, veritatis obcaecati. Veritatis, earum. Ipsa unde reiciendis suscipit vitae, aliquid tempore!</p>
+                <p class="ansr">Lorem ipsum Lorem ipsum  Maiores, quibusdam ab natus nemo eum amet officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at delectus incidunt nulla ipsum quia optio porro, placeat cum atque commodi consectetur, mollitia dolores aut voluptate perferendis eius accusamu... </p>
+                <a>See More</a>
+            </div>
+        </div>
+        <img id="rigtbtn" src="../images/rigtbtn.png">
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footcontain">
+            <div class="main">
+                <div class="logo">NPoint</div>
+                <p>For any inquiry please email</p>
+                <p><u>Info@my.com</u></p>
+            </div>
+            <div class="main">
+                <p>Visit Our <u>Website</u> on</p>
+                <img src="https://static.wixstatic.com/media/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png/v1/fill/w_28,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png">
+                <img src="https://static.wixstatic.com/media/11062b_7dc1612522fa4189b30c17455973c3bf~mv2.png/v1/fill/w_28,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7dc1612522fa4189b30c17455973c3bf~mv2.png">
+                <img src="https://static.wixstatic.com/media/11062b_a06d85fa94d64ef68680321f5a043a8c~mv2.png/v1/fill/w_28,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_a06d85fa94d64ef68680321f5a043a8c~mv2.png">
+            </div>
+            <div class="main">
+                <p>500 Terry Francine Street </p>
+                <p>San Francisco, CA 94158</p>
+            </div>
+        </div>
+        <div class="navLeft footLi">   
+            <ul>
+                <li class="lft"><a href="/">Shop</a></li>
+                <li class="lft"><a href="/faq">FAQ</a></li>
+                <li class="lft"><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerInfo">
+            <p>© 2035 by NPoint. Powered and secured by Nirali Darji</p>
+        </div>
+     </div>
+</body>
+<script src="../js/faq.js"></script>
+</html>
