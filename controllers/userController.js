@@ -113,11 +113,11 @@ const editPost = async(req,res) =>{
             return res.render("Edit",{UserName,email,Phone,Image,message: "Incorrect Password !!!" });
         }
         await users.findByIdAndUpdate({_id:user._id},{$set:{
-            Image : req.file.filename || user.Image,
+            Image : req.file ? req.file.filename : user.Image,
             UserName : userName || user.UserName,
             Phone : phone || user.Phone
         }});
-        return res.redirect('/edit');
+        return res.redirect('/logined');
     }
     res.redirect('/');
 }

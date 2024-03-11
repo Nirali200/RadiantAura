@@ -900,7 +900,25 @@ input[type ='file']{
     display: flex;
     justify-content: center;
 }
-
+.ftitle h1{
+    font-size: var(--xxl-font-size);
+    font-weight: 400;
+}
 .ansr{
-    color: rgba(105, 105, 105, 0.781);
+   font-size: var(--mid-font-size);
+   font-weight:100;
+}
+.background{
+    background-color: #cfc2d3b6;
+    height: 700px;
+}
+.ftop{
+    top: auto !important;
+}
+.fmedia{
+    background: #fdfbfb !important;
+    border: 1px solid rgb(216, 58, 127);
+}
+.fmedia p{
+    font-size: var(--mid-font-size);
 }

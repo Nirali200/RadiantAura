@@ -176,6 +176,9 @@
     .footerInfo{
     top: -8%;
     }
+    .ftop{
+    grid-auto-columns: 33.3%;
+    }
 }
 
 @media only screen and (max-width:1252px){
@@ -295,6 +298,12 @@
     .footerInfo{
         margin-top: -2%;
     }
+    .background{
+        height: 500px;
+    }
+    .ftop{
+        grid-auto-columns: 50.5%;
+    }
 }
 
 @media only screen and (max-width:784px){
@@ -409,6 +418,9 @@
     .details{
         grid-template-columns: 100px auto;
     }
+    .ftop{
+        grid-auto-columns: 50.5% !important;
+    }
     }
 
 @media only screen and (max-width:659px){
@@ -471,6 +483,9 @@
     }
     .editProf,.outEdit{
         height: 60vw;
+    }
+    .background{
+        height: 600px;
     }
 }
 
@@ -698,6 +713,9 @@
         height: 20px;
         width: 20px;
     }
+    .background{
+        height: 500px;
+    }
 
 }
 
@@ -767,6 +785,12 @@
 }
 .log{
     right: -3%;
+}
+.ftop{
+    grid-auto-columns: 70% !important;
+}
+.background{
+    height: 450px;
 }
 }
 

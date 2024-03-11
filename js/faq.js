@@ -16,3 +16,17 @@ cross.addEventListener('click',()=>{
     navLeft.classList.add('navLeftres');
     navLeftUl.classList.remove('resAnimate');
 })
+
+
+let scrollContainer = document.querySelector('.media-scroller');
+let lftbtn = document.getElementById('lftbtn');
+let rigtbtn = document.getElementById('rigtbtn');
+
+rigtbtn.addEventListener('click',()=>{
+    scrollContainer.style.scrollBehavior = 'smooth';
+    scrollContainer.scrollLeft += 400;
+})
+lftbtn.addEventListener('click',()=>{
+    scrollContainer.style.scrollBehavior = 'smooth';
+    scrollContainer.scrollLeft -= 400;
+})
