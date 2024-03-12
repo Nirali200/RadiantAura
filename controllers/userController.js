@@ -125,12 +125,30 @@ const editPost = async(req,res) =>{
 
 const getFaq =async(req,res) =>{
     const {token} = req.cookies;
+    let user;
     let profile = false;
     if(token){
-        profile = true;
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("Faq.ejs",{profile,Image});
     }
-    res.render("Faq",{profile});
+    return res.render("Faq.ejs",{profile});
 }
 
+const getEmailVer = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    let profile = false;
+    if(token){
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("EmailVer.ejs",{profile,Image});
+    }
+    return res.render("EmailVer.ejs",{profile});
+}
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq };
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer };

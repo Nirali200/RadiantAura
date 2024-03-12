@@ -729,7 +729,8 @@ content: "";
 
 .outDetail{
     width: 70%;
-    display: flex;    
+    display: flex;  
+    padding: 10px 0px;
     background: linear-gradient(336deg, var(--background-color), #cfc2d3);
     border-radius: 15px;
     margin-top: 150px;
@@ -875,12 +876,13 @@ input[type ='file']{
     border: 1px solid #cfc2d3;
 }
 .otpver{
-    display: none;
+    display: block;
     flex-direction: column;
     margin-bottom: 10px;
 }
 .otp{
     margin: auto;
+    justify-self: center;
 }
 
 .otp input{
@@ -921,4 +923,7 @@ input[type ='file']{
 }
 .fmedia p{
     font-size: var(--mid-font-size);
+}
+.pass{
+    color: black;
 }

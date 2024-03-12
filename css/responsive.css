@@ -10,7 +10,7 @@
     --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
     --gray-shade:rgb(234, 225, 225);
     --white-backGround:rgba(255, 255, 255, 0.605);
-    --nav-backGround:rgba(224, 151, 178, 0.901);
+    --nav-backGround:rgba(231, 211, 231, 0.901);
 }
 
 .hamburger{
@@ -47,8 +47,8 @@
 }
 
 .lin1,.lin2{
-    background-color: var(--white-backGround);
-    height: 5.3px;
+    background-color: rgb(48, 47, 47);
+    height: 4.5px;
     width: 34px;    
     border-radius: 4px;
 
@@ -132,7 +132,7 @@
     }
     .resAnimateRev{
         animation-name: shows;
-        animation-duration: 0.6s;
+        animation-duration: 0.8s;
         animation-direction: reverse;
         animation-fill-mode: none;
         animation-timing-function: ease-in-out;

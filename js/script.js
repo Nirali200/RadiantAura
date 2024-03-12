@@ -42,3 +42,16 @@ cross.addEventListener('click',()=>{
     navLeft.classList.add('navLeftres');
     navLeftUl.classList.remove('resAnimate');
 })
+
+
+window.addEventListener('scroll',()=>{
+    const navbar = document.querySelector('.navbar');
+    const scrollPosition = window.scrollY + window.innerHeight;   
+     
+    if(scrollPosition>navbar.offsetTop + 400){
+        navLeftUl.style.zIndex = -1;
+        burger.classList.add('burgerRes');
+        navLeft.classList.add('navLeftres');
+        navLeftUl.classList.remove('resAnimate');
+    }
+})
