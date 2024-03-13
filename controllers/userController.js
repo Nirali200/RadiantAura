@@ -2,6 +2,10 @@ const cookieParser = require('cookie-parser');
 const users = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcript = require('bcrypt');
+const nodemailer = require('nodemailer');
+const parser = require('body-parser');
+
+let sotp = null;
 
 
 const getRegistration =  (req,res) =>{
@@ -9,7 +13,8 @@ const getRegistration =  (req,res) =>{
 }
 
 const postRegistration = async(req,res) =>{
-    const { UserName , email , Phone, Password} = req.body;
+    const { UserName , email , Phone, Password } = req.body;
+    const isVerified = false;
     
     let user = await users.findOne({UserName});
     if(user){
@@ -18,14 +23,72 @@ const postRegistration = async(req,res) =>{
     const hashPassword = await bcript.hash(Password,10);
     
     
-    user = await users.create({UserName,email,Phone,Password : hashPassword});
+    user = await users.create({UserName,email,Phone,Password : hashPassword,isVerified});
     const token = jwt.sign({_id:user._id},process.env.SECRET_STRING)
     
     res.cookie("token",token,{
         httpOnly:true,
         expires: new Date(Date.now() + 3600*1000), 
     })
-    res.redirect('/');
+    sendVerifyMail(req.body.UserName,req.body.email,user._id);
+    res.redirect('/verifyemail');
+}
+
+const sendVerifyMail = async(userName,email,user_id) => {
+
+    try{
+        
+        const transPorter = nodemailer.createTransport({
+            host:"smtp.gmail.com",
+            port:587,
+            secure:false,
+            tls:true,
+            auth:{
+                user:"darjinirali08@gmail.com",
+                pass:'kkgb icwx xmny yydp'
+            }
+        })
+
+        sotp = Math.floor(1000 + Math.random() * 1000);
+        
+        const mailOptions = {
+            from:"darjinirali08@gmail.com",
+            to:email,
+            subject:'For verification mail',
+            html:'<p>Hii '+userName+',Your OTP is '+sotp+'. </p>',
+        }
+        transPorter.sendMail(mailOptions,function(error,info){
+            if(error){
+                console.log(error);
+            }
+            else{
+                console.log("Email has been sent :-",info.response);
+            }
+        })
+
+    }catch(error) {
+        console.log(error);
+    }
+
+}
+
+const postVerify = async(req,res) =>{
+        let otp = parseInt(req.body.otp);
+        console.log(sotp);
+        if(otp == sotp)
+        return res.redirect('/');
+    return res.redirect('verifyemail')
+        
+}
+
+const verifyMail = async(req,res)=>{
+    try{
+       const updateInfo = await users.updateOne({_id:req.query.id},{$set:{ isVerified:true }});
+       console.log(updateInfo);
+       res.render("EmailVer.ejs");  
+    }catch(error){
+        console.log(error);
+    }
 }
 
 const getLogin = (req,res) =>{
@@ -151,4 +214,4 @@ const getEmailVer = async(req,res) =>{
     return res.render("EmailVer.ejs",{profile});
 }
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer };
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify };

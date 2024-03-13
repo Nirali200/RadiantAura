@@ -49,12 +49,12 @@
     </div>
     <div class="logContain registers">
     <div class="logTitl">Verify Your Email</div>
-        <form  class="login reg" action="/register" method="post">
+        <form  class="login reg" action="/verify" method="post">
             <div class="verify">
                 <span class="otpver">
                     <p>OTP has been sended to your mail-box.</p>
                     <div class="otp">
-                        <input type="text">
+                        <input type="text" name="otp">
                         <input type="text">
                         <input type="text">
                         <input type="text">
@@ -62,7 +62,7 @@
                 </span>
             </div>
             <p class="error"><%= locals.message %></p>
-            <input type="submit" value="Verify" class="submitbtn logsub">
+            <button type="submit" class="submitbtn logsub">Verify</button>
         </form>
 </div>
 <div class="footer">
