@@ -284,6 +284,9 @@
     .login input{
         width: 90%;
     }
+    .ottp input{ 
+            width: 10% !important;
+    }
     .login label{
         margin-left: 15px;
     }

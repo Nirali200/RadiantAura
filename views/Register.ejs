@@ -58,7 +58,10 @@
             <input name="Phone" type="text">
             <label class="loglab"> Set Password :</label>
             <input name="Password" type="password">
+            <%
+            if(locals.message){%>
             <p class="error"><%= locals.message %></p>
+            <%}%>
             <div class="signUp">
                 <p>Already have account? <a href="/login">Log-in</a></p>
             </div>

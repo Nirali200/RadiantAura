@@ -877,20 +877,28 @@ input[type ='file']{
 }
 .otpver{
     display: block;
-    flex-direction: column;
-    margin-bottom: 10px;
 }
 .otp{
     margin: auto;
-    justify-self: center;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.oottp{
+    margin-top: -5%;
 }
 
 .otp input{
     width: 25px;
+    outline: 0.2px solid rgb(109, 107, 107);
+    border: 0.2px solid rgb(124, 120, 120);
 }
 
 
 .err{
+    display: none;
     color: red;
     margin: auto;
 }

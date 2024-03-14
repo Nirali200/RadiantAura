@@ -48,20 +48,23 @@
         </nav>
     </div>
     <div class="logContain registers">
-    <div class="logTitl">Verify Your Email</div>
-        <form  class="login reg" action="/verify" method="post">
-            <div class="verify">
+    <div class="logTitl oottp">Verify Your Email</div>
+        <form  class="login ottp" action="/verify" method="post">
+            <div class="verify"><p  style="display: flex; justify-self: center; margin-top: -15px; margin-bottom: 15px;  cursor: pointer;">
+                <a href="/sendOtp" style="margin-right: 4px;">click here</a> to Send Otp </p>
                 <span class="otpver">
-                    <p>OTP has been sended to your mail-box.</p>
                     <div class="otp">
-                        <input type="text" name="otp">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" name="otp1">
+                        <input type="text" name ="otp2">
+                        <input type="text" name="otp3">
+                        <input type="text" name="otp4">
                     </div>
                 </span>
             </div>
+            <%
+            if(locals.message){%>
             <p class="error"><%= locals.message %></p>
+            <%}%>
             <button type="submit" class="submitbtn logsub">Verify</button>
         </form>
 </div>
@@ -95,5 +98,5 @@
     </div>
  </div> 
 </body>
-<script src="../js/login.js"></script>
+<script src="../js/emailVerify.js"></script>
 </html>

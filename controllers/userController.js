@@ -30,8 +30,23 @@ const postRegistration = async(req,res) =>{
         httpOnly:true,
         expires: new Date(Date.now() + 3600*1000), 
     })
-    sendVerifyMail(req.body.UserName,req.body.email,user._id);
+    
     res.redirect('/verifyemail');
+}
+
+const sendOtp = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {UserName,email,_id} = user;
+        sendVerifyMail(UserName,email,_id);
+        return res.render('EmailVer.ejs',{message:"Otp has been Sended to your email,please check!"});
+    }
+
+    return res.redirect('/verifyemail');
+    
 }
 
 const sendVerifyMail = async(userName,email,user_id) => {
@@ -73,11 +88,14 @@ const sendVerifyMail = async(userName,email,user_id) => {
 }
 
 const postVerify = async(req,res) =>{
-        let otp = parseInt(req.body.otp);
-        console.log(sotp);
+        let otp = req.body.otp1;
+         otp = otp + req.body.otp2;
+         otp = otp + req.body.otp3;
+         otp = otp + req.body.otp4;
+         otp = parseInt(otp);
         if(otp == sotp)
         return res.redirect('/');
-    return res.redirect('verifyemail')
+    return res.render('EmailVer.ejs',{message:'otp not matches!!'});
         
 }
 
@@ -214,4 +232,4 @@ const getEmailVer = async(req,res) =>{
     return res.render("EmailVer.ejs",{profile});
 }
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify };
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp };
