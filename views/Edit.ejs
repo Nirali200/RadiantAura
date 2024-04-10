@@ -62,7 +62,7 @@
                 <label class="plab elab">Full Name:</label>
                 <input class="pinp" name="userName" type="text" value="<%= locals.UserName %>">
                 <label class="plab elab">Email:</label>
-                <input class="pinp"  type="text" value="<%= locals.email %>" readonly>
+                <div style="display: flex; gap: 15px;"><input class="pinp"  type="text" value="<%= locals.email %>" readonly><% if(!locals.isVerified) { %><a href="/verifyemail" style="margin-left: -12px; color: rgb(223, 223, 236);  font-size: 15px; font-weight: 100;">verify</a><%} %></div>
                 <label class="plab elab">Phone:</label>
                 <input class="pinp" name="phone" type="text" value="<%= locals.Phone %>">
                 <label class="plab elab">Password:</label>

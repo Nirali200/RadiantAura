@@ -12,7 +12,7 @@ const getRegistration =  (req,res) =>{
         res.render("Register");
 }
 
-const postRegistration = async(req,res) =>{
+    const postRegistration = async(req,res) =>{
     const { UserName , email , Phone, Password } = req.body;
     const isVerified = false;
     
@@ -22,9 +22,8 @@ const postRegistration = async(req,res) =>{
     }
     const hashPassword = await bcript.hash(Password,10);
     
-    
     user = await users.create({UserName,email,Phone,Password : hashPassword,isVerified});
-    const token = jwt.sign({_id:user._id},process.env.SECRET_STRING)
+    const token = jwt.sign({_id:user._id},process.env.SECRET_STRING);
     
     res.cookie("token",token,{
         httpOnly:true,
@@ -52,7 +51,6 @@ const sendOtp = async(req,res) =>{
 const sendVerifyMail = async(userName,email,user_id) => {
 
     try{
-        
         const transPorter = nodemailer.createTransport({
             host:"smtp.gmail.com",
             port:587,
@@ -93,10 +91,18 @@ const postVerify = async(req,res) =>{
          otp = otp + req.body.otp3;
          otp = otp + req.body.otp4;
          otp = parseInt(otp);
-        if(otp == sotp)
+        if(otp == sotp){
+            const {token} = req.cookies;
+            let user;
+            if(token){
+                const decode  = jwt.verify(token,process.env.SECRET_STRING);
+                user = await users.findById(decode._id); 
+                const updateInfo = await users.updateOne({_id:user._id},{$set:{ isVerified:true }});
+                console.log(updateInfo);
         return res.redirect('/');
-    return res.render('EmailVer.ejs',{message:'otp not matches!!'});
-        
+    }
+    }
+    return res.render('EmailVer.ejs',{message:'otp not matches!!'});   
 }
 
 const verifyMail = async(req,res)=>{
@@ -161,8 +167,8 @@ const edit = async(req,res) =>{
     if(token){
         const decode  = jwt.verify(token,process.env.SECRET_STRING);
         user = await users.findById(decode._id);
-        const {UserName,email,Phone,Image} = user;
-        return res.render('Edit.ejs',{UserName,email,Phone,Image});
+        const {UserName,email,Phone,Image,isVerified} = user;
+        return res.render('Edit.ejs',{UserName,email,Phone,Image,isVerified});
     }
     res.redirect('/');
 }
