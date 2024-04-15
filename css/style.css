@@ -904,6 +904,9 @@ input[type ='file']{
 }
 
 
+.passChange{
+    background: linear-gradient(rgba(197, 132, 166, 0.492), #faf9f9);
+}
 
 
 .ftitle{

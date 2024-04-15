@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="module" href="../js/script.js"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="../css/index.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css"  href="../css/responsive.css">
+    <title>NPoint-changePassword</title>
+</head>
+<body>
+    <div class="logContain passChange">
+        <div class="logTitl">Change Password</div>
+            <form  class="login" action="/postChangePass" method="post">
+                <label class="loglab">Current Password : </label>
+                <input name="Password" type="password" >
+                <label class="loglab">New Password :</label>
+                <input name="NewPassword" type="password">
+                <% if(locals.message){%>
+                    <p class="error"><%= locals.message %></p>
+                <%}%>
+                <input type="submit" value="Submit" class="submitbtn logsub" >
+            </form>
+    </div>
+</body>
+</html>

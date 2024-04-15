@@ -16,10 +16,16 @@ const getRegistration =  (req,res) =>{
     const { UserName , email , Phone, Password } = req.body;
     const isVerified = false;
     
-    let user = await users.findOne({UserName});
+    let user = await users.findOne({email});
     if(user){
         return  res.render("Register",{message :"User Allready Exits"});
     }
+
+    user = await users.findOne({UserName});
+    if(user){
+        return  res.render("Register",{message :"User Allready Exits"});
+    }
+
     const hashPassword = await bcript.hash(Password,10);
     
     user = await users.create({UserName,email,Phone,Password : hashPassword,isVerified});
@@ -196,7 +202,6 @@ const editPost = async(req,res) =>{
         const {userName,phone,password} = req.body;
         const isMatch = await bcript.compare(password,Password);
         if(!isMatch){
-            console.log(Image);
             return res.render("Edit",{UserName,email,Phone,Image,message: "Incorrect Password !!!" });
         }
         await users.findByIdAndUpdate({_id:user._id},{$set:{
@@ -238,4 +243,42 @@ const getEmailVer = async(req,res) =>{
     return res.render("EmailVer.ejs",{profile});
 }
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp };
+
+const getChangePass = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    let profile = false;
+    if(token){
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("changePass.ejs",{profile,Image});
+    }
+    return res.render("changePass.ejs",{profile});
+}
+
+const changePass = async(req,res) =>{
+    const { Password , NewPassword } = req.body;
+
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id).select("+Password");
+        const isMatch = await bcript.compare(Password,user.Password);
+        const {UserName,email,Phone,Image} = user;
+        console.log("hmm");
+        if(!isMatch){
+            return res.render("changePass",{message: "Incorrect Password !!!" });
+        }
+        const hashPassword = await bcript.hash(NewPassword,10);
+        await users.findByIdAndUpdate({_id:user._id},{$set:{
+            Password : hashPassword || user.Password
+        }});
+        return res.render('Edit',{UserName,email,Phone,Image,message: "Password Changed Successfully!!"});
+    }
+    return res.render('Edit',{UserName,email,Phone });
+}
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass };

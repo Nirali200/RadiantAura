@@ -1,5 +1,5 @@
 const express = require('express');
-const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp } = require('../controllers/userController');
+const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp,getChangePass,changePass } = require('../controllers/userController');
 const {isAuth} = require('../middlewares/auth.js');
 const router = express.Router();
 const multer = require('multer');
@@ -44,6 +44,10 @@ router.get('/verifyemail',getEmailVer);
 router.post('/verify',postVerify);
 
 router.get('/verifyemial',verifyMail);
+
+router.get('/changepass',getChangePass);
+
+router.post('/postChangePass',changePass);
 
 
 
