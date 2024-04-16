@@ -281,4 +281,23 @@ const changePass = async(req,res) =>{
     return res.render('Edit',{UserName,email,Phone });
 }
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass };
+
+
+const deleteAcc = async(req,res) => {
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        await users.findByIdAndDelete({_id:user._id});
+        await res.cookie("token",null,{
+            httpOnly:true,
+            expires: new Date(Date.now()), 
+        })
+        return res.redirect('/');
+    }
+    return res.render('Edit',{UserName,email,Phone });
+}
+
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc };

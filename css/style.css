@@ -909,6 +909,32 @@ input[type ='file']{
 }
 
 
+.blur{
+    cursor: pointer;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.642);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display : none;
+}
+.pop_up{
+    border: 1px solid black;
+    text-align: center;
+    padding: 49px;
+    width: 374.8px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(205, 130, 169), #565555);
+    position: fixed;
+    top: 50%;
+    cursor: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .ftitle{
     display: flex;
     justify-content: center;
