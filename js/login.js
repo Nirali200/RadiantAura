@@ -6,16 +6,12 @@ if(err){
     },5000);
 }
 
-
-if(document.querySelector('.log').href.includes(pathName)){
-    document.querySelector('.log').classList.add('active');
-}
-
 burger = document.querySelector('.hamburger');
 navLeft = document.querySelector('.navLeft');
 navLeftUl = document.querySelector('.navLeft').childNodes[1];
 
 burger.addEventListener('click',() => {
+    navLeftUl.style.zIndex = 2;
     navLeftUl.classList.add('resAnimate');
     navLeft.classList.remove('navLeftres');
     burger.classList.remove('burgerRes');
@@ -24,6 +20,7 @@ burger.addEventListener('click',() => {
 cross = document.querySelector('.cross');
 
 cross.addEventListener('click',()=>{
+    navLeftUl.style.zIndex = -1;
     burger.classList.add('burgerRes');
     navLeft.classList.add('navLeftres');
     navLeftUl.classList.remove('resAnimate');

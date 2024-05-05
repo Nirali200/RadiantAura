@@ -29,12 +29,15 @@
     margin-top: 5px;
     padding: 10px;
     height: 80px;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    background-color: white;
 }
 
 .navbar{
     display: flex;
     height: 80px;
-
 }
 
 .navLeft{
@@ -46,6 +49,10 @@
     padding: 15px;
     display: flex;
     align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
 }
 .logo{
     width:40%;
@@ -130,6 +137,16 @@
     font-size: var(--mid-font-size);
 }
 
+.results ul{
+    border-top: 1px solid #999;
+    padding: 10px 10px;
+}
+.results ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
 .log{
     text-decoration: none;
     display: flex;

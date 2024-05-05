@@ -30,14 +30,19 @@
                     <li class="lft resSerch"><a>Search</a></li>
                 </ul>
             </div>
-            <div class="logo">NPoint</div>
+            <div class="logo"><a href="/">NPoint</a></div>
             <div class="navRight">
-                <div class="box">
-                    <input type="text" placeholder="Search.....">
-                    <img class="search" src="../images/search.png">
-                    <a href="">
-                        <i class="fas fa-search"></i>
-                    </a>
+                <div class="sarchBox">
+                    <div class="box">
+                        <input type="text" placeholder="Search....." id="input-box">
+                        <img class="search" src="../images/search.png">
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="results">
+                        
+                    </div>
                 </div>
                 <% if(locals.profile){ %>
                     <a class="log" href="/logined"><% if(locals.Image == undefined){%>
@@ -51,8 +56,8 @@
             </div>
         </nav>
     </div>
-
-    <div class="section home">
+<div id="sections">
+    <section class="section home" id="home">
         <div class="homeLft">
            <span class="heading">Inhanse Inner Beauty</span>
            <span class="heading">With NaturePoint</span>
@@ -60,9 +65,9 @@
         </div>
         <div class="homeRigt">
         </div>
-    </div>
+    </section>
 
-    <div class="aboutUs">
+    <section class="aboutUs" id="about">
         <div class="aboutlft"></div>
         <div class="aboutrigt">
             <div class="title">About Us</div>
@@ -72,9 +77,9 @@
                 </span>
              </div>
         </div>
-    </div>
+    </section>
      
-    <div class="blogs">
+    <section class="blogs" id="blogs">
         <div class="btitle">Popular Blogs</div>
         <div class="b-container">
             <div class="boxes">
@@ -114,10 +119,10 @@
                 <!-- <button class="blogbtn">See Blog</button> -->
             </div>
         </div>
-    </div>
+    </section>
 
 
-        <div class="related">
+        <section class="related" id="realtedSkinCare">
             <div class="recTitle">Related Posts</div>
         <div class="related-wrap">
             <img id="lftbtn" src="../images/lftbtn.png">
@@ -175,9 +180,9 @@
             </div>
             <img id="rigtbtn" src="../images/rigtbtn.png">
         </div>
-        </div>
+        </section>
     
-<div class="products">
+<section class="products" id="productsdryskinoilyskin">
         <div class="recTitle"><strobg>Recommended Products</strobg></div>
     <div class="recommanded">
         <div class="types">
@@ -199,8 +204,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
+</div>
  <div class="footer">
     <div class="footcontain">
         <div class="main">
