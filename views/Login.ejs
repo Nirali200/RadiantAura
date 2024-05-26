@@ -28,18 +28,17 @@
                     <li class="lft"><a href="/">Shop</a></li>
                     <li class="lft"><a href="/faq">FAQ</a></li>
                     <li class="lft"><a href="/contact">Contact</a></li>
-                    <li class="lft resSerch"><a>Search</a></li>
                 </ul>
             </div>
             <div class="logo"><a href="/">NPoint</a></div>
             <div class="navRight">
-                <div class="box">
+                <!-- <div class="box">
                     <input type="text" placeholder="Search.....">
                     <img class="search" src="../images/search.png">
                     <a href="">
                         <i class="fas fa-search"></i>
                     </a>
-                </div>
+                </div> -->
                 <a class="log active" href="/login">Log In</a>
             </div>
         </nav>
@@ -48,9 +47,9 @@
     <div class="logTitl">Log In</div>
         <form  class="login" action="/login" method="post">
             <label class="loglab">UserName : </label>
-            <input name="UserName" type="text" value= "<%= locals.UserName %>" placeholder="Name">
+            <input name="UserName" type="text" value= "<%= locals.UserName %>" placeholder="Name" required>
             <label class="loglab">Password :</label>
-            <input name="Password" type="password" placeholder="Password...">
+            <input name="Password" type="password" placeholder="Password..." required>
             <% if(locals.message){%>
                 <p class="error"><%= locals.message %></p>
             <%}%>

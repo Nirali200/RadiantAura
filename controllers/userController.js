@@ -17,6 +17,7 @@ const getRegistration =  (req,res) =>{
     const isVerified = false;
     
     let user = await users.findOne({email});
+    
     if(user){
         return  res.render("Register",{message :"User Allready Exits"});
     }

@@ -27,18 +27,17 @@
                     <li class="lft"><a href="/">Shop</a></li>
                     <li class="lft"><a href="/faq">FAQ</a></li>
                     <li class="lft"><a href="/contact">Contact</a></li>
-                    <li class="lft resSerch"><a>Search</a></li>
                 </ul>
             </div>
             <div class="logo"><a href="/">NPoint</a></div>
             <div class="navRight">
-                <div class="box">
+                <!-- <div class="box">
                     <input type="text" placeholder="Search.....">
                     <img class="search" src="../images/search.png">
                     <a href="">
                         <i class="fas fa-search"></i>
                     </a>
-                </div>
+                </div> -->  
                 <% if(locals.profile){ %>
                     <a class="log" href="/logined"><img class="pimg" src="../images/profile.png"></a>
                 <% }else  {%> 
@@ -51,13 +50,13 @@
     <div class="logTitl ">Sign In</div>
         <form  class="login reg" action="/register" method="post">
             <label class="loglab">UserName : </label>
-            <input name="UserName" type="text">
+            <input name="UserName" type="text" required>
             <label class="loglab">Email : </label>
-            <input name="email" type="email">
+            <input name="email" type="email" required>
             <label class="loglab">Phone : </label>
-            <input name="Phone" type="phone">
+            <input name="Phone" type="phone" minlength="10" maxlength="12" required>
             <label class="loglab"> Set Password :</label>
-            <input name="Password" type="password">
+            <input name="Password" type="password" maxlength="10" minlength="0" required>
             <%
             if(locals.message){%>
             <p class="error"><%= locals.message %></p>
@@ -65,7 +64,7 @@
             <div class="signUp">
                 <p>Already have account? <a href="/login">Log-in</a></p>
             </div>
-            <input type="submit" value="Sign In" class="submitbtn logsub">
+            <input type="submit" onclick="valid" value="Sign In" class="submitbtn logsub">
         </form>
 </div>
 <div class="footer">
