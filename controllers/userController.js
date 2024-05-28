@@ -64,8 +64,8 @@ const sendVerifyMail = async(userName,email,user_id) => {
             secure:false,
             tls:true,
             auth:{
-                user:"darjinirali08@gmail.com",
-                pass:'kkgb icwx xmny yydp'
+                user:process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS
             }
         })
 
