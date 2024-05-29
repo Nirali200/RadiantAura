@@ -1,5 +1,5 @@
 const express = require('express');
-const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc } = require('../controllers/userController');
+const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass } = require('../controllers/userController');
 const {isAuth} = require('../middlewares/auth.js');
 const router = express.Router();
 const multer = require('multer');
@@ -52,6 +52,14 @@ router.post('/postChangePass',changePass);
 
 router.post('/delAccount',deleteAcc);
 
+router.get("/forgotPass",getforgotPass);
 
+router.post('/forgotOTP',forgotOTP);
+
+router.post('/postForgotOtp',postForgotOtp);
+
+router.get('/setPass',setPassword);
+
+router.post('/postSetPass',postSetPass);
 
 module.exports = router;

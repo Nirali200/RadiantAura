@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="module" href="../js/script.js"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"  href="../css/index.css">
     <link rel="stylesheet" type="text/css"  href="../css/style.css">
     <link rel="stylesheet" type="text/css"  href="../css/responsive.css">
-    <title>NPoint - Login</title>
+    <title>NPoint - Signin</title>
 </head>
 <body>
     <div class="w-container">
@@ -28,36 +27,36 @@
                     <li class="lft"><a href="/">Shop</a></li>
                     <li class="lft"><a href="/faq">FAQ</a></li>
                     <li class="lft"><a href="/contact">Contact</a></li>
+                    <li class="lft resSerch"><a>Search</a></li>
                 </ul>
             </div>
-            <div class="logo"><a href="/">RadiantAura</a></div>
+            <div class="logo">RadiantAura</div>
             <div class="navRight">
-                <!-- <div class="box">
+                <div class="box">
                     <input type="text" placeholder="Search.....">
                     <img class="search" src="../images/search.png">
                     <a href="">
                         <i class="fas fa-search"></i>
                     </a>
-                </div> -->
-                <a class="log active" href="/login">Log In</a>
+                </div>
+                <% if(locals.profile){ %>
+                    <a class="log" href="/logined"><img class="pimg" src="../images/profile.png"></a>
+                <% }else  {%> 
+                <a class="log" href="/login">Log In</a>
+                <%} %>
             </div>
         </nav>
     </div>
-    <div class="logContain">
-    <div class="logTitl">Log In</div>
-        <form  class="login" action="/login" method="post">
-            <label class="loglab">UserName : </label>
-            <input name="UserName" type="text" value= "<%= locals.UserName %>" placeholder="Name" required>
-            <label class="loglab">Password :</label>
-            <input name="Password" type="password" placeholder="Password..." required>
-            <% if(locals.message){%>
-                <p class="error"><%= locals.message %></p>
+    <div class="logContain registers">
+    <div class="logTitl oottp">Forgot Password</div>
+        <form class="login ottp" id="mail" action="/forgotOTP" method="post">
+            <label class="loglab">Email : </label>
+            <input name="email" type="text" placeholder="type your registered mail id" required>
+            <%
+            if(locals.message){%>
+            <p class="error"><%= locals.message %></p>
             <%}%>
-            <div class="signUp">
-                <p>Don't have account? <a href="/register">Sign-in</a></p>
-                <u><a href="/forgotPass">Forgot Password</a></u>
-            </div>
-            <input type="submit" value="Log In" class="submitbtn logsub" >
+            <button type="submit" class="submitbtn logsub">Send Mail</button>
         </form>
 </div>
 <div class="footer">
@@ -90,5 +89,7 @@
     </div>
  </div> 
 </body>
+<script src="../js/emailVerify.js"></script>
 <script src="../js/login.js"></script>
+<script src="../js/forgot.js"></script>
 </html>

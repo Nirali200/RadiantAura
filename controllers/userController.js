@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const parser = require('body-parser');
 
 let sotp = null;
-
+let fotp = null;
 
 const getRegistration =  (req,res) =>{
         res.render("Register");
@@ -38,6 +38,105 @@ const getRegistration =  (req,res) =>{
     })
     
     res.redirect('/verifyemail');
+}
+
+
+const getforgotPass = async(req,res) =>{
+    res.render("forgotPass");
+}
+
+const forgotOTP = async(req,res)=>{
+    const{email} = req.body;
+    const user = await users.findOne({email});
+    if(user){
+    sendForgotMail(email);
+    return res.render('forgotOtp.ejs',{message:"Reset code has been Sended to your email,please check!",email});
+}
+else{
+    return res.render('forgotPass.ejs',{message:"Email is not Registered,please check!",email});
+}
+}
+
+
+const sendForgotMail = async(email) =>{
+    try{
+        const transPorter = nodemailer.createTransport({
+            host:"smtp.gmail.com",
+            port:587,
+            secure:false,
+            tls:true,
+            auth:{
+                user:process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS
+            }
+        })
+
+        fotp = Math.floor(1000 + Math.random() * 1000);
+        
+        const mailOptions = {
+            from:"darjinirali08@gmail.com",
+            to:email,
+            subject:'For verification mail',
+            html:'<p>For Reseting the password enter the given code:<p><p>'+fotp+'. </p>',
+        }
+        transPorter.sendMail(mailOptions,function(error,info){
+            if(error){
+                console.log(error);
+            }
+            else{
+                console.log("Email has been sent :-",info.response);
+            }
+        })
+
+    }catch(error) {
+        console.log(error);
+    }
+
+}
+
+
+const postForgotOtp =async (req,res) =>{
+    let otp = req.body.otp1;
+         otp = otp + req.body.otp2;
+         otp = otp + req.body.otp3;
+         otp = otp + req.body.otp4;
+         otp = parseInt(otp);
+        if(otp == fotp){
+            const{email} = req.body;
+            let user = await users.findOne({email});
+            const token = jwt.sign({_id:user._id},process.env.SECRET_STRING);
+            res.cookie("token",token,{
+            httpOnly:true,
+            expires: new Date(Date.now() + 3600*1000), 
+            })
+            res.redirect('/setPass');
+        }
+        res.render('forgotOtp.ejs',{message:"OTP is Incorrect!"});
+}
+
+
+const setPassword = (req,res) =>{
+    res.render('setNewPass');
+}
+
+const postSetPass = async (req,res) =>{
+    const { Password , RePassword } = req.body;
+
+    const {token} = req.cookies;
+    let user;
+    if(token){
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id).select("+Password");
+        if(Password != RePassword){
+            return res.render("setNewPass",{message: "Please check Reentered Password!!!" });
+        }
+        const hashPassword = await bcript.hash(Password,10);
+        await users.findByIdAndUpdate({_id:user._id},{$set:{
+            Password : hashPassword || user.Password
+        }});
+        return res.redirect('/');
+    }
+    return res.render('setNewPass');
 }
 
 const sendOtp = async(req,res) =>{
@@ -279,7 +378,7 @@ const changePass = async(req,res) =>{
         }});
         return res.render('Edit',{UserName,email,Phone,Image,message: "Password Changed Successfully!!"});
     }
-    return res.render('Edit',{UserName,email,Phone });
+    return res.render('Edit',{UserName,email,Phone});
 }
 
 
@@ -301,4 +400,4 @@ const deleteAcc = async(req,res) => {
 }
 
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc };
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass };
