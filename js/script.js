@@ -108,3 +108,13 @@ inputBox.onkeyup = function(){
         resultBox.innerHTML = '';
     }
 
+    const media = document.querySelectorAll('.local');
+
+    for(let i=0;i<media.length;i++){
+        media[i].addEventListener('click',(e)=>{
+            const imageUrl = e.target.parentElement.childNodes[1].src;
+            localStorage.setItem('imageUrl', imageUrl);
+        })
+    }
+    
+    

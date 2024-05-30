@@ -490,6 +490,12 @@
     .background{
         height: 600px;
     }
+    .blogContent{
+        padding: 0px 35px;
+    }
+    .postPhoto{
+        padding: 0px 25px;
+    }
 }
 
 @media only screen and (max-width:533px){
@@ -580,8 +586,24 @@
     .main{
         height: 70px;
     }
-
-
+    .postPhoto img{
+        max-width: 250px;
+        height: 300px;
+        margin: auto;
+    }
+    .postPhoto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 50px;
+        gap: 10px;
+    }
+    .blogContent{
+        padding: 0px 0px;
+    }
+    .blogContent p,li,h4{
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:430px){
     body{
@@ -794,6 +816,11 @@
 }
 .background{
     height: 450px;
+}
+.postPhoto img{
+    max-width: 250px;
+    height: 200px;
+    margin: auto;
 }
 }
 

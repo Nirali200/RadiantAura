@@ -981,3 +981,22 @@ input[type ='file']{
 .pass{
     color: black;
 }
+
+.postPhoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 100px;
+    gap: 10px;
+}
+
+.postPhoto img{
+    width: 350px;
+    height: 300px;
+    margin: auto;
+}
+
+.blogContent{
+    margin: auto;
+    padding: 0px 50px;
+}

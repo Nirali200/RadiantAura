@@ -1,5 +1,5 @@
 const express = require('express');
-const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass } = require('../controllers/userController');
+const { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn, edit, editPost,getFaq,getEmailVer, verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass } = require('../controllers/userController');
 const {isAuth} = require('../middlewares/auth.js');
 const router = express.Router();
 const multer = require('multer');
@@ -39,6 +39,8 @@ router.post("/edit",upload.single('image'),editPost);
 router.get('/faq',getFaq);
 
 router.get('/sendOtp',sendOtp);
+
+router.get('/relatedPosts',relatedPosts);
 
 router.get('/verifyemail',getEmailVer);
 

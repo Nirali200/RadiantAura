@@ -314,6 +314,19 @@ const editPost = async(req,res) =>{
     res.redirect('/');
 }
 
+const relatedPosts = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    let profile = false;
+    if(token){
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("RelatedPost.ejs",{profile,Image});
+    }
+    return res.render("RelatedPost.ejs",{profile});
+}
 
 const getFaq =async(req,res) =>{
     const {token} = req.cookies;
@@ -400,4 +413,4 @@ const deleteAcc = async(req,res) => {
 }
 
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass };
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass };
