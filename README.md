@@ -35,7 +35,34 @@ To run this project, you will need to add the following environment variables to
 
 `SMTP_USER =your_email_address`
 
+### 🤌: Dependencies
+`bcrypt: ^5.1.1`
 
+`body-parser: ^1.20.2`
+
+`cookie-parser: ^1.4.6`
+
+`dotenv: ^16.4.5`
+
+`ejs: ^3.1.9`
+
+`express: ^4.18.2`
+
+`fs: ^0.0.1-security`
+
+`jsonwebtoken: ^9.0.2`
+
+`mongoose: ^8.4.0`
+
+`multer: ^1.4.5-lts.1`
+
+`nodemailer: ^6.9.10`
+
+`nodemon: ^3.1.1`
+
+`path: ^0.12.7`
+
+`url: ^0.11.3`
 
 ## :toolbox: Getting Started
 
