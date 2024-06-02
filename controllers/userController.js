@@ -412,5 +412,19 @@ const deleteAcc = async(req,res) => {
     return res.render('Edit',{UserName,email,Phone });
 }
 
+const getProducts = async(req,res) => {
+    const {token} = req.cookies;
+    let user;
+    let profile = false;
+    if(token){
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("Products.ejs",{profile,Image});
+    }
+    return res.render("Products.ejs",{profile});
+}
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass };
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass,getProducts };

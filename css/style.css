@@ -473,9 +473,13 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     border: 2px solid transparent;
+}
+.type_wrap h3{
+    color:#333134;
 }
 .type_wrap  h3:hover{
     color: var(--background-color);
@@ -865,6 +869,7 @@ input[type ='file']{
     font-size:  var(--profile-font-size);
     font-weight: var(--lrg-font-weight);
     margin-bottom: -20px;
+    color: #cfc2d3;
 }
 .vbtn{
   margin: auto;
@@ -885,12 +890,19 @@ input[type ='file']{
     padding: 3px 5px;
     border-radius: 3px;
     background-color: transparent;
+    color: #cfc2d3;
+    font-size:  var(--profile-font-size);
+    font-weight: var(--lrg-font-weight);
 }
 .pinp::placeholder{
     color: #cfc2d3b6;
 }
 .pinp{
     border: 1px solid #cfc2d3;
+}
+.lrg{
+    width: 140px;
+    height: 35px;
 }
 .otpver{
     display: block;
@@ -973,13 +985,13 @@ input[type ='file']{
 }
 .fmedia{
     background: #fdfbfb !important;
-    border: 1px solid rgb(216, 58, 127);
+    border: 1px solid rgb(148, 42, 111);
 }
 .fmedia p{
     font-size: var(--mid-font-size);
 }
 .pass{
-    color: black;
+    color: rgb(99, 5, 77);
 }
 
 .postPhoto{
@@ -999,4 +1011,33 @@ input[type ='file']{
 .blogContent{
     margin: auto;
     padding: 0px 50px;
+}
+
+
+.data-container{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    gap: 25px;
+    width: 96vw;
+    padding-left: 20px;
+}
+
+.pItems{
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    background: linear-gradient(rgba(235, 192, 214, 0.492), #faf9f9);
+    box-shadow: var(--box-shadow);
+}
+.pItems h5,.pItems p{
+    margin: 0px;
+}
+.pItems img{
+    height: 300px;
+    width: 80%;
+    margin: 10px 10px;
+    object-fit: contain;
+    mix-blend-mode: darken;
 }

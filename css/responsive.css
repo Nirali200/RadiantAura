@@ -208,7 +208,7 @@
     }
     .home{
         width: 95%;
-        margin: 0 12px;
+        margin: 0px auto;
     }
     .hbtn{
         padding: 10px;
@@ -604,12 +604,18 @@
     .blogContent p,li,h4{
         font-size: 15px;
     }
+    .blur{
+        width: 100vw;
+        height: 200vh;
+    }
+    .pop_up{
+        width: 370px;
+    }
 }
 @media only screen and (max-width:430px){
     body{
         padding: 0;
         margin: 0;
-        width: 111%;
     }
     :root{
         --mid-font-size : 12px;
@@ -625,6 +631,9 @@
     .profile{
         height: 90vw;
         margin-bottom: 250px;
+    }
+    .heading{
+        width: 80%;
     }
     .editProf,.outEdit{
         height: 90vw;
@@ -733,6 +742,9 @@
     .footLi{
     margin-bottom: 5px;
     }
+    .footerInfo p{
+        font-size: 12px;
+    }
 
     .main img{
         height: 20px;
@@ -741,13 +753,16 @@
     .background{
         height: 500px;
     }
-
+    .blur{
+        width: 150vw;
+        height: 200vh;
+    }
+    .pop_up{
+        width: 300px;
+    }
 }
 
-@media only screen and (max-width:339px){
-  body{
-    width: 115%;
-  }
+@media only screen and (max-width:339px){   
   :root{
     --mid-font-size : 12px;
     --mid-font-weight: 100;
@@ -755,6 +770,13 @@
     --xxl-font-weight: 300;
     --lrg-font-size:10px;
     --lrg-font-weight:300;
+}
+.log{
+    position: relative;
+    left: 45px;
+}
+.navRight{
+    width: 25%;
 }
 .formContainer{
     gap: 0;
@@ -822,6 +844,22 @@
     height: 200px;
     margin: auto;
 }
+.footerInfo p{
+    font-size: 10px;
+}
+.editProf{
+    width: 105%;
+}
+.pinp{
+    border: 0.7px solid #cfc2d3;
+}
+.lrg{
+    width: 100px;
+}
+.pop_up{
+    width: 250px;
+}
+
 }
 
 

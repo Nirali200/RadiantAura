@@ -1,0 +1,123 @@
+{ 
+    "drySkin" : 
+    [{
+        "id": 1,
+        "title":"face-wash",
+        "name" :"Dot & Key Barrier Repair Hydrating pH5.5 Face Cream with Ceramides & Hyaluronic",
+        "image_url":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSjck5TGGJaUR0nubOkcWfAGNOhOGClctoJL9rEIN4AuY_v0pJ_AU8QS7-T560UfPYbVPK4UlfNDHJ490q0i42jThLKfJ1snGp6p88bfqs",
+        "url":"http://www.flipkart.com/dot-key-barrier-repair-hydrating-face-cream-probiotic-hyaluronic-dry-skin/p/itmdfe2e2a9d2faa?pid=MSCGHZURHXJGTZ4Y&lid=LSTMSCGHZURHXJGTZ4YOXBAZA&marketplace=FLIPKART&cmpid=content_moisturizer-cream_8965229628_gmc",
+        "price":350,
+        "rating":4.8,
+        "website":"flipkart"
+     }, 
+     {
+        "id": 2,
+        "title":"lotion",
+        "name" :"Vaseline Gluta Hya Dewy Radiance Serum-In-Lotion",
+        "image_url":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRDse98mNz5hwvGWyeEWTeWTlu8Otim4zhg_rZRyge7VoU_Ad8igLhsjKNeY4BhF95H1Ce8WjHpbCEvuj4CWrVlp8OZymetHNZpqCRa4jxNJJbZRGCcwbpEFuNP",
+        "url":"http://www.myntra.com/Body-Cream-and-Lotion/Vaseline/Vaseline-Non-Sticky-Gluta-Hya-Dewy-Radiance-Serum-in-Lotion---200-ml/22580648/buy",
+        "price":178,
+        "rating":4.8,
+        "website":"Myntra"
+     },
+     {
+        "id": 3,
+        "title":"kit",
+        "name" :"Minimalist Dry Skincare Kit",
+        "image_url":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQI9ECvJNoTaQqWnpORgShkRkQD0vX84RelG0M4EgLv0nVx7g-CZzcA3xhldoD9Q6PlIjto9FD4Aj2pqmLTpgGcAJ88PsuDn8wYX9TI0saUGxSubwchySylW3c",
+        "url":"https://www.nykaa.com/minimalist-dry-skincare-kit/p/6098558?ptype=product&skuId=6098558&srsltid=AfmBOopF7yD4XQcRf9aNZjhPE1eRRTdVIY49XSoviaZsh0NEarnVeFmWAds",
+        "price":1137,
+        "rating":3.8,
+        "website":"Nykaa"
+     },
+     {
+        "id": 4,
+        "title":"lotion",
+        "name" :"Cetaphil DAM Daily Advance Ultra Hydrating Lotion",
+        "image_url":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBIREhAXFxYWERUWFhURGBYWFRcWFxUWFRUYHSggGBolGxUVITEhJSktLi4uFx81ODMsNygtLisBCgoKDg0OGxAQGzEmHyUtNy8vLS8vKy0vLS0tLSstLSsvKy0vLS0tKystLi0tKy0rKy0wLTUtLSs3LS0tKy8tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCAwYBBwj/xABHEAABAwIDAwcGDAQGAgMAAAABAAIRAyEEEjEFQVETIjJhcZGxBnKBocHRBxQVIzNCUlRikrLwFlOC4SREc5Oi0kPDY4Px/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QALxEAAgECBAQEBQUBAAAAAAAAAAECAxEEEiExQVGRsRNhofAUIjJxgQUzUuHx0f/aAAwDAQACEQMRAD8A+4oiIAiIgCIiAIiIAiIgCIiALXWrBsZt5gdsE+xbFXbZ0p/6g/S9ATeVC95QKKAvYUXJJPKBOUCjQvYS4JHKBOUCjwkJcEjlAnKBR4SEuCRygXgqiYWheU+kP3uKXBMREUkBERAEREAREQBEWrEkxbigNqKv5R3EoKrrXKi5NiwRQBWdxWRrO4pcWJqKEazr3Tl3cUuLE1FC+MOXoruS4sTFX7Y0p/6g/S9bOXctGOcXNv8AVMjt08CUuLG8IvAvVAK3bGMfTy5HMbLah5+ktyXPUAXektUKptCuJIqUstozAg9AudMCJFnHgAZgKz2hguUjoWa4c5ubpFs33CGn1LRV2YSI5hMuJkEyMpa3Um+U5Sd4sZ0Ughu2pUgnlaAPOgTI+uReJsWgHqa6LkLY/ajyYa+mLCRvMOdnLBFzAGXdYzuW47IBJkUYM/UvN8szwn03WxuyxmBcGFomBBzCzgIdNum6wjVARaO0ahIDqlMdDNlEgFzgYkt/lmZtBDeJV4qlmy3C/wA1PNPRdEta0SRMHQ+q1r2yALyn0x+9xXq8p9MfvcUBMREUkBERAEREAREQBRto9AkEiCNCRvjcpK04tssd2H1XCAhUhO935ne9beTHF35ne9RsLUkKWCoJMcg/F+Z3vTJ29596yRAY5B19596ZB19596yRQDzkx19596cmOv8AM73r1eoDVUaBx/M73qtq1TMZjEGbnhb1wrGubKmqmXDtE94PsUgvJgSbDeqjF+UFNtmA1Dx6Le/U9y1+VWJLabRMMMl50ENANzwvPoXzqrtWpiC9uHcyjRYM1WvUloa2QBEAkEkwAAXEm0LzatTFVqzoYZWt9Unsr+/NlJzUdzsNoeWBp3e6lT4CC5x7BMn0BUOJ+El4+jBf2hjB4E+pcbj8E0Q+niKeIzOy83lG1M34qdRocQdzhIOmqywexa9SqKJp1KdQse+Hse05WMc6Yib5coPEheph/wBJUVmrVZSf3cV0WvqZpV5N2R0b/hLxv1W0AOtrnHvDgPUsB8I2MOpYPNY3wIPiuVbgqpa5wpVS1hIqOyOhhGoeYhpHWvRgapaXilVNMCS/I8tA1kuiAOtek8LRta3q+9zl4k+Z2mG+ELEHV9OeD2AetsK7wXl863LUWkbzTJb3NdM94Xzatsuo2myqGucx7DUJa1xDAHvp88xAvTJUzB4F7GGoarRSa2i94Ae61cvDQAQLgsvFr2JWKtgWlelP8PUsqk+Z9p2VtejiW5qL5jpNNnN7W+3RTqfTH73FfGvJnaZFek+mSH52tc3i1xALesH3L7NT6Y/e4rLByu4zVmjVSqZ0S0RF0OgREQBERAEREAXhC9RAc7gnRY7rdytGlVbmxVePxE99/arKmVUkzXqg7Zc4UXFmculsZCQ7pNmIIOkqniqZOfEjcLui9UwbA6DXg2IB3SDpkXLmvVvbGakTzhqDEAG4GVt73feQCDlUr1iP/ODkEQHx0g05onnAQ7S5J1AhAdMipNmvqcrz+XiXNGYuiwIzOGl8k9tRsayLolARsU6yrmtkE/jYPU+fYpuMNlHDYog8avgCPegKD4THk0KdIWD3Ek+YBA7CXf8AFfPNmuY1lfDVncjyvJOZUIc5gfRLi0PygnI4VHCQDBAMar7LtnZLMVS5N5ynVjhctdxjeLwQvnG2PJivSkVKRqM3PYC8dtrt9MKIYiVGTurxfVMy1oSzZir2MKOEr06lTEUajoqN+b5V7aWam5rKjqjQ0yHEWZcC8gwFY0trtZUoMNXDNaPjMvpVcVWDOWoOptzVaxJDS/I4tboWBxuucrbN+w70H3qJUwrxq0+i/gvRp1qNbVS16ehnUmjs9gYuhSFLPiaLsorNrOqV8QS19Q1GnkqLRkcx0sdyjpnM4mCFhyhpnAVDjWUqdKhQc+lmqZi0El3J0wIqZwMvjZcSSpDKdWrECpUgBrek+GjRo4AcNF2lCMfmk7LzJU+FjpsDtxgq4MCoaeHaysKtOXZGcpVxByuaLHmupjuWitjaT8M6mKrA/wCKYMAOJEuoOqGpTBjp84QN6h4TyZrv6eWkOs5j6Gj2kLpdj+TbGEFjHVan2iM0dgFm9uvWvIxX6zg6OkHnlyjrxvvt3fkdIU5yK7yK2S5laniKgiHDIw6mTEuG7qHGDuX2Kl0x+9yodkbELXCpViRdrdYPElXtLpj97isuFq4ms5VcRpfZckaoQUFZE1ERbCwREQBERAEREAREQFFjB8+7+n9IUykou0rVv6QfEexV+N26GHLTAc4ak9EHhbUrPiMRToRzVHZEl1WoteMrhIkGOtpDh6wFE+RqEFuSxIJ5ztWzF5n6zu8ri9reWRpkh1Y5vsUwJHaRp6SubxXlziT9GXNHFz3vPiAPWqYerWxGtKk8vN2iv+v8HOVWMd2fWBsah/L4jV2h13rI7Ko35moIN3aOiQL2HNB7ZOpK+LP8rccf81WHYY8Fg3ymxe/EVndtR/sK9L4Sra+l/v8A0c/iY8j7dR2ZSa5r2thzZynM4xmnNqbzJ139ilOXxXCeV2IGteu3te6oO53uXR7O8ua7Y5TJXZvMBjvQW27wslRypu1SLXbqSq8WdvjSsqzYw9Pz578x9qr6W0qdemKlIy02INi0jVrhuKttosihTHAs8FZO+p2TubmaBZKLicfSpBvK1GU5nLmcGzETE9o71o+XsL94o/nb71F0TdEuvhKb/pKdN/nNa7xCjfImF+7Yf/bZ7lj8vYX7xR/O33p8vYX7xR/O33qryvcj5Wb2bMoN6NCiOymwexQtpMDX06dKhh3OeHnnjIAGAHVrTx4Ld8vYX7xR/O33qPjMfs+tArVMLUAmA8sdE66qJRpy3SF0RsBtfDPq0KbaVNpq0w6YZLXvBLGWF5DKl/N+0Fs2d5TMq8gxtN7X1DD2kECn8254OaIdmDDljUSbRC2/H9n/AMzC9JrtWdJmXKe0ZGxwyhZt2ngQGAVcMAy9MZmcyxbzeFnOHpKmKhH6bIZkW6UumP3uVcNu4U6Yij+dvvVjS6Y/e5XTuTdMmoiKxAREQBERAEREAREQFLtkfOtPFsdxPvXybaG0KlWu3B0XZHOqNpPqbw5zg0x1Am+8x3/W9uWdTPnerL718Wx+z306puWV6bgQ78TTLXeBB7FxlToOtCdZXte3JN21aONaTUdCPiKuFdmp0aFbNpRqcrLnmYaalMtyw7g2CLXKtMN5IObWpCs4Gny9KliAGVmZTUdlAa9zAHgkZMzCQC4brquxu0rud8Vo08Q65qjlCJmS+nTLixjpEyBa8ALKv5ROc9tUUqbaoqsrOdmquDnsdmEMc8tY0m5AHCIhe4m5K8dupl04jZ/k8a4dyNZjyMwblp14dkbmJc7k4pAiwzxJ4arH5ClrQ2vSdXfSbWZRAqZix1PlMufLlD8s82bxrcTvwvlMaYYGYellpueaTS+uQ0VJzggVAHm7oc6SJ6gscVtxoFPkaVMVWYelRFY8oHtiiKdSG5shcOcA8tmPQRPz3/wfLY34rYDOU+aqU3AfFTUozUD2trii2S8ty3fU3EwHjsETadNuHDMjSHvbUJOcuAyYrEUogjnc2m0TbSd61s25U5R1QNYXP5AEQ4j/AA7qLmACZuaLJ7TEbrSns2piQw4ljaYZngjMHva+o+rlLSSGgOqPvEwYOkrLisTSw9O+Ilpy4vTa3HUlRzP5UX3kCS6lVqaNc5rQPxNBzfqbfq6l9E27am3zx4OXKeTeEyNaAMrC5gY3qBiR3+pdZt76Mee32j2ry8PNTpqSVk9k+V9PQ3QjlSRxPwj64fsq/wDqXGyuy+Ef/L9lX/1Klwm2WMAmjmMMDpLTemKQBaC20imZmbu781ZJ1HczVUs7I2Bw1JzHGo/I+SAS4ADmktOSCXS6BYiAZ3KY7ZNDotxAc4Xc4Q4Boa5zjAO4NImYmBbMFCxWNpuZlbRax2cODgR0QCMthvse0dalv2tRcS5+HZIdLGjSDUe58nzXR2gGALKiylFYi4XB0nUwXVmsqEmW8GAGLmG5i8AQXCxk2Un5Mw7nODcU1rQXRmAmA4ht5AcTBNtxad5AyG2aWcO+LNMNYG3b0m/WJDOpggW5p4r2ntPDucOUoANAaC6zjzWFptEGebbQRZFl93JWX3c1U9m0CR/imgHeWtEc0OgjPrcjhzYmbKpVjQxtIdKkXAPqOaJaABUa0AEFpnLkBG65W+ptai4QcM2wIHOEDmMYB0Z+oDPS3SotF+2RZFVQ6TfOHivtdIc9fHK9dr6ocxgpiW80aa66cI7l9ko9PvWnDcTvQ2ZLREWs7BERAEREAREQBERAVO3xZh6yO8f2VVi9j0cS0cq3nDovbzXD07x1GQrnb4+bB4OHgR7VDwZVZJPRk2TWpyuK8gJnk6wI+y9niQb9yqqvwaVjo+gOx9QerIV9MC9VYRyO8G1+Tm6EGfL2/BdW34ikOxrn+5SaXwZZb1KwcBc60x6bE+tfR15UYHAtOhBB7DZdalWrOOXO19rL1sFQguBxmzPJigwB1OpQaDIzCXHmjM4S6DYX7FdUNj0W7+UcImSIE3HNHEcZUh2w6JgnOXCYdndN2tY7SxljWt00aFnSwVOiHCk0MBgkDSQI8AsCwFDPnks0ucm33OiVtjTSE1WD8Q9RlWu3Pox5zVWYC9dnp/SVZ7c+jHnNW1AoPKKgx5pZ2tdDXxmAdF2aSqn4hS/lU/yN9y6PaGDNRzMpAhrtZ3lvuUb5Gf8AaZ6/csNanJzbSOU4NvY5+vg2AjLQpOEGeY3URAm0b73Wn4vpGFpREmzTe0CY7V0x2K/7TPX7lDb5Kkf+Q7vrHd/T1qipS4orkfIphRFv8LT6+hbstdKdFsgOw1JoJA0aYtJMxpu7SOKum+SxBnlLwBqdAZ1De0dhKO8lSQByhtoZM65rnLxU+E+XvqMnkUlOgIGbDUvq6NbvBLrX0iNbyFN+IUf5VL8jfcrSh5POZMPBmJkk6T1dfqW75Gf9pnr9yrKlPgiHB8ikdgaQuKVOd3Mb7l3VHpd652tsh4aTmbYE79w7F0VDpd604eEo3udKcbEtERai4REQBERAEREAREQEHbY+Zd1Fp/5BfJsXt7FMrVGNrODW1HhoAbYBxAGnBfXdqNmk/wA0nuuvj+IaW4qqTSfUbmkQJuHtfrBscuU9Tis+IbSVmc6t7aErZ+28Q90PxVRognpspyRoMzrBTW16roDdoOc9wGWHxcmIc0GRxJ3AyRYqE+oXf5J2jwbRdx5pHMtlk9tuCUs/J5H4WYbDSW3Lhmyk6b3D0AjfIzKfn3OKk+fc9w20Kr2knHVWnNDQXuBLQLuguABJLQASPrSYErccU8l8bRq5Wnmy5xJGYttzgCYaTa0FukwArPz5hgmy0c0cyxtlJho0y2Fte2TS505sI0kMLQQKbnZo5pcSBFo3Wi0SmZc+4v71NeIxtVrXubtCq8tjKA5wzySDHPkRG8eq5qau2MT94xH+7U96tcKKrMv+GDntyCXFrug4mwI5sz6h2GPjuUeHD4tTDiTJGQuEg79RuPG3CwjNfj3I159zqfg4qPe0OqPc901DLnFxiwiT6V1u3Pox5zVzPwb0C2mA4Q6Kkjtqe4LptufR/wBTfFb6f0o1R2Rob0h5p8WrctLekPNPi1bHgkWMHjY+KkuRqmABM56guTAdAvuiIjXvVfUawES7E5hIa4nNB6Mj97uu8xuFr78RwjmN6pkaag+jtWxmHqB0msS3c3KBv3ns/e4gQ61ZhJ52JbqXQbNHSJ36C1uA6pxqtY2ZdiQQD9bcHQ5wd17+zsKm0cNVBGasXiRIyNE6e46cfQvaeGqBpaaxdoAS0WjWbySeMoDXh6DXtBD68AuF3QbnNfed3cpmGohjQ0FxibuMkySTJ7SozcLVAHz5mIJLQ6TJOa51ggehbaFKoHEuqZhfm5Q2DaIIvx1nVAbMV0H+a7wKk0OkouK6D/Nd4FSaHSQExERWKhERAEREAREQBERAacY2abxxa4eorgH7ML3OeXhgB1mImDrFl9EcJELjMMCQ4AAmRY6aN1VJxUtxa5Fp7DpiScQOs55MgeswtvyFSMfPi/ObeZ1E69Xq4yrLDYd8n5rDhsH6s3It2jNrpqtjcPW0Iw8cMrjrJMT1k/sqnhRGRFQdj0CfprwLwdwaBeYuAFlU2NQJzOqyYnou3xeAdbK4GGqwb0c0iDksAJ147vWsvi1S12fi5oiObG7UQe/0J4MPbYyIojsPDdHlNLaO6xrN9PUo9fY1B5OWpmJvo707+zvXSOw9S5ztN5bzAIHOt623/D3wqlN4MuLDYjmty8Pd4cE8KPtsZUSfJGllzjWLT2ud7lZ7c+i/qb4qF5KjmvPHKe/Mfapu3fov6m+K6pWQI7ekPNPiFuWlnSHmnxatygsFDxW02U3hjg+TBkDMADOsGd3Deo20qL2CpVFWoG2OVokjmhkCXced6So1WoQb1sQWtIdmDea6WhwESPtj+0CAJzttU4DgHkFzWWboXtLgeyAdF4NtUpIipaIIbIdLS7mwZ0HrUHFVMuVrquIkZszg0tnmtcJkjdOl5cOCCuS6OWr7/qWuZBub2O/ggL9rgRIIINwRcEcQV6qLDuNR5p8rWBbUJBIgRS5pbIdJacwueCucNTLWhpcXEauOp7yUAxXQf5rvAqTh+kouK6D/ADXeBUrD9JAyYiIrFQiIgCIiAIiIAiIgC4iphyajgHuZDyTG8aRrxC7dcfiXBuIqAkC83MaucfaoZKJNPZ7iBNerIMgggEWjs/8A0rSzDvBcAMS5pL6ZDqlssQHtBGpzf8VPw9dsWM9gLvBbamJa0FxDoAJPNdu9CgtYp34Z4ghmKIyzHLQB0oa0Dt0IFiOEDJmEdDhyVSMpDQ6oCLHOBYfWLQD2r3FYwiDUqtZmJDATUaCWmHBuSCQCRczPATAnYXEkEsqSXCYMEkxEzlH4mkG0h3USRBFwuywWy8VWGTDeUkAboj9+Ki4vZ7AQZcS3STP1g7xaFdvrD8X5X+5VGPrawHTu5rvcgLbyVHzRPWPU1vvUrbv0X9TfFYeTrIojtPqt7Fnt36I+c3xCsQRmdIeafELctQpzBBIMRaN8cR1L3kz9t3c33KpY2ysalUNBc4hrRckmAB1lYcmftu7m+5VmPe7lIDpy5MgcARyjy6CQAOi1oibc+dQEBKftQDSnUI4k06f/ABqPa4ekBbsPjGvMXa+JyusYtdpFnC4u0kXVPj6hp1OTpYenWJa1zi+sKN3OeGtYHA/YOl9FJxGEcMuVuQmCIl/JVdGmY6Mkg8QTMSZEFuijYR5qMY8OcA9rXAQ2wcAeHWtvJn7bu5vuQkYnoO813gVKw3SUR9EkEF7oIINm7/QpeG6SIhkxERWKhERAEREAREQBERAFy207V39o9bQV1K5jbYiuesNPqj2KGSiVhjZbcSwljgNY5vaLieqYUfCGyk1awaJcYEgd+iguU2PILA2i806jWlrXuqGkaZcabvnGWzCAJF+EXtZUC19TlGTlyxNxJJFhN7Zb9vEFM1Ko6C1rnQCJbNnCxEjhKzZiml2S+a404aoQbKpVPjDdW1Y2VLizdAzptjNiizsJ7yT7Vht36E9rf1BScA2KbBwa3wCjbd+hPa39QVihqp6BZLCloFmqnQKBXpNFYF4lr8oabw2qwuyz5wdAm0sG8hT0ImxuDYhAUW1aXLMqinSpVeVpZGVMzQQeePnA64a0uzDLM3tvUim8NoMYHNr1mBjGHXNVa2xnWLEk8A6dCt9XZFJx6JA50gGxzNyGQer13MqRhsKymIYIsBMkkhvRBJuYQixlhaIYxrBcNa1o7GgAeC2IiA9W3C9JaVuwvSREMmoiKxUIiIAiIgCIiAIiIAuc8o2xVaeLY7ifeujXP+VdVjeSzODSS5rZtNgYn0KGEYYMqYWgi4BHWJVfgirFqg6GIotBkNaDxgehe8k2ZyidZi8kR4LJEBoxBsqbE3KucRoqoNHKMBsC9ovbVwCEM7BrYAHBQNu/Qu7W/qCsFX7d+hd2t/UFYoaaWgWSxpaDsWSqdEF6vEQHqLxEB6iIgC3YTpLSt2F6SIhk1ERWKBERAEREAREQBERAF8++GH6Ch/qn9BX0FfPvhjHzFA7uVP6D/dccR+2zjiP22fNKG0K1P6OrUZ5rnN8CptPymxo0xNX0uzeKp5WbV5LlJbNnk55LZvqX9Pyrx33h/cw+xbP4sx38935Wf9VzwK2MqKrqVP5PqyPFqfyfVl7U8osW4Xr1PQQ3wWOxa734vDGo97zy9HpOLv8AyN4qsmysfJhs4vDj/wCame5wPsVlKTkk2+pKnKUkm2fdVX7e+gd2t/UFYKv279A7+n9QXuHuGiloOxZrCl0R2LJVOh6or6lXOQGgs5uU92Yf3UlEBHwtV5JDm2GhiJBzRI42HevMU+oDzBIj1yf7KUkoDXh3lzQSIJHYtiIgC34TpLQt+E6SIhk1ERWKBERAEREAREQBERAFzfwgbHfisG5lJuaqxzajG8S2Q4DryudC6RFWUVJNMrKKkmmfmx7SCQRDgYcCIIPAg3BTIDvLewSv0BtTyfwuJviMPSqO3OLRmHY8XHeqOt8G+z3dGnVZ5tap4OJWCWCfBmCWClwZ8b+Lfj9RWYwwH157AfavrJ+DDB/zMUP/ALG+1i2U/g0wQ1diHdtQDwaFz+CqeXqc/gqnl1Z8qDty6v4N9luq4ptaDyVHMS7cXlpa1oO886fQOK7jC+Qmz2X5DMfxve/1Ex6l0NCg1jQ1jWsYNGtAaB2ALtSwbjJSk9jtSwbjJOT2NijbRwYrU3UyXNDou2xEEG3cpKLebznB5LuFhi68f0+5e/w0/wC91+5q6JEBzv8ADdT73W/K1P4cq/fKv5W+9dEiA53+Ha33yp+Qe9P4erffH/kH/ZdEiA53+Hq/3x3+2P8Asn8P4j74f9of9l0SIDnfkDEffD/tD/upmy9mVqTs1TEcq2NOTyevMVbIgCIiAIiIAiIgCIiAIiIAiIgC8KIgAXqIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA//2Q==",
+        "url":"https://www.amazon.in/Cetaphil-Hydrating-Moisturizer-Non-Greasy-Fragrance-Free/dp/B0CBKL35YC",
+        "price":420,
+        "rating":4.6,
+        "website":"Amazon"
+     },
+     {
+        "id": 5,
+        "title":"cream",
+        "name" :"CeraVe Moisturizing Cream",
+        "image_url":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5SILE06yHdU2ImcxyxlnySo0piczH0h4oc87zB4lYn7H3qB-1pUuuRqQPp34hwkscVQBi4nwSAk6_lB-0ktKphvtb1eQHw_qSrVKP3_cMa_FvvgZKjBxRDSE",
+        "url":"https://www.nykaa.com/cerave-moisturizing-cream-for-dry-to-very-dry-skin-with-ceramides-hyaluronic-acid/p/13169472?ptype=product&skuId=13169457&srsltid=AfmBOoposzuh6pjy2hElTLEYPyrGek4ZjTCR7Kxif_02JsXXoM0AmGKy6jk",
+        "price":399,
+        "rating":4.7,
+        "website":"Nykaa"
+     },
+     {
+        "id": 6,
+        "title":"serium",
+        "name" :"Cetaphil Optimal Hydration Activation Serum",
+        "image_url":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRwQ3fmYnnsb6VkWGxAZZIf8OPYStgooH8qlckRahzTJTVkYf_CzDxVVxqtzmNkAh4tbeo11soSicuPQhPRKU03g_mLuDo46bxEx8r9saRv9tMLI5aRYivn",
+        "url":"http://www.myntra.com/Serum-and-Gel/Cetaphil/Cetaphil-Optimal-Hydration-48H-Activation-Serum-with-Hyaluronic-Acid---30ml/24613044/buy",
+        "price":660,
+        "rating":4.7,
+        "website":"Myntra"
+     }
+    ],
+    "oilySkin" : [
+      {
+         "id": 1,
+         "title":"face-wash",
+         "name" :"Cetaphil Oily Skin Cleanser",
+         "image_url":"https://m.media-amazon.com/images/I/718NOimjcaL.jpg",
+         "url":"https://www.amazon.in/Cetaphil-Cleanser-Foaming-CETAPHIL-Sensitive/dp/B0BRG68197",
+         "price":888,
+         "rating":4.5,
+         "website":"Amazon"
+      }, 
+      {
+         "id": 2,
+         "title":"kit",
+         "name" :"The Derma Co. No More Oily Skin Kit",
+         "image_url":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQF9D6L4UG58hUezZ1Mr_Ky3691c113GVFRIFnW9TEhp_bdnoXc4UZgDkIBwk8JDngjNDoVLwe2W4SQ6c60MPaBNuX7K3Kn05GrP3zjodCi4QRhqFm9_QTxZPc",
+         "url":"https://thedermaco.com/product/no-more-oily-skin-kit?srsltid=AfmBOoqBWL_cBNf3vXVyxkSv-wKkXwDDJniuNbUTrI7El_ad8s-eqwm95sA",
+         "price":842,
+         "rating":"",
+         "website":"The DermaCo"
+      }, 
+      {
+         "id": 3,
+         "title":"kit",
+         "name" :"Minimalist Daily Skincare Routine For Oily & Acne Prone Skin CSMS Combo (50ml)",
+         "image_url":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSRJ-79vkdNKqqyLh2-s1EAa8g3_NKaTBq18tP07wMLwWV_4lDi5FkMhAnn8cbbuwDUJjl6EXn6S5mxwz1EkD0Q1-52ayaDdRzPgBSQ1-xyxWYJZANyO0jAUg",
+         "url":"https://www.nykaa.com/minimalist-daily-skincare-routine-for-oily-acne-prone-skin/p/7875200?ptype=product&skuId=7875200&srsltid=AfmBOooescz1ShvO02rO3kZpDRvXeI6sjPuX7GOW7qTVlgxfN76Sm1Lt4k4",
+         "price":1564,
+         "rating":4.6,
+         "website":"Nykaa"
+      }, 
+      {
+         "id": 4,
+         "title":"serium",
+         "name" :"The Derma Co 10% Niacinamide Face Serum for Acne Marks & Prone Skin",
+         "image_url":"https://rukminim2.flixcart.com/image/750/900/xif0q/anti-ageing/u/e/v/-original-imagpuw9zcbygxjc.jpeg?q=20&crop=false",
+         "url":"https://www.flipkart.com/derma-co-10-niacinamide-face-serum-acne-marks-prone-skin-men-women/p/itm2a57da442a24a?pid=ATAG3HFCYQGEJPFW&marketplace=FLIPKART",
+         "price":218,
+         "rating":4.8,
+         "website":"flipkart"
+      }, 
+      {
+         "id": 5,
+         "title":"face-wash",
+         "name" :"",
+         "image_url":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTiORLF7SNv0YvFHATdcNKXWMOIxYdXvWN50av--TxcQF0M9E-peyExh3M-nzJ8nW8Da0M_gMb1W8DcV3qaHa7GM83sFyQ_5v2d0b4HNpvKJ7UuXByecJCGwg",
+         "url":"The Derma Co. 1% Salicylic Acid Gel Face Wash with Witch Hazel for Active Acne",
+         "price":135.59,
+         "rating":4.5,
+         "website":"BigBsket"
+      } 
+    ],
+    "sensitiveSkin":[
+      
+    ],
+    "allSkinType":[
+      
+    ]
+
+}
