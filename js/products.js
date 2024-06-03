@@ -1,8 +1,9 @@
 const currentPath = window.location.pathname;
 
 console.log(currentPath);
-const findType = (currentPath) => {
-    const dataType = "";
+
+const findType = (currentPath,data) => {
+    
     if(currentPath == "/oilySkin"){
          dataType = data.oilySkin;
         }
@@ -13,16 +14,18 @@ const findType = (currentPath) => {
         dataType = data.sensitiveSkin;
         }
         else if(currentPath == "/allSkinType"){
-        dataType = data.allSkinType
+        dataType = data.allSkinType;
         }
 
         return dataType;
 }
+
  function displayData(data) {
     const container = document.querySelector('.data-container');
     container.innerHTML = ''; 
     
-    
+    const dataType = findType(currentPath,data);
+    console.log(dataType);
 
     dataType.forEach(item => {
         const itemElement = document.createElement('div');
