@@ -170,6 +170,9 @@
     .editProf,.outEdit{
         height: 40vw;
     }
+    .editProf{
+        gap: 18px;
+    }
     .photo{
         height:65%;
     }
@@ -178,6 +181,9 @@
     }
     .ftop{
     grid-auto-columns: 33.3%;
+    }
+    .related{
+        margin-bottom: 120px;
     }
 }
 
@@ -228,7 +234,7 @@
         top: 15px;
     }
     .logo{
-        width:30%;
+        width:40%;
     }
     .res{
         width: 35%;
@@ -307,6 +313,16 @@
     .ftop{
         grid-auto-columns: 50.5%;
     }
+    .data-container{
+        padding-left: 0px;
+    }
+    .pItems{
+        height: 400px;
+        font-size: var(--lrg-font-size);
+    }
+    .pItems img{
+        height: 200px;
+    }
 }
 
 @media only screen and (max-width:784px){
@@ -376,7 +392,10 @@
     .type_wrap img{
         height: 200px;
     }
-    
+    .data-container{
+        grid-template-columns: 22% 22% 22% 22%;
+        padding-left: 3%;
+    }
 }
 
 @media only screen and (max-width:734px){
@@ -424,6 +443,9 @@
     .ftop{
         grid-auto-columns: 50.5% !important;
     }
+    .pItems h4{
+        font-size: var(--blogs-title-font-size);
+    }
     }
 
 @media only screen and (max-width:659px){
@@ -440,6 +462,9 @@
     .outDetail{
         flex-direction: column;
         height: 400px;
+    }
+    .related{
+        height: 50vw;
     }
     .ebtn{
         margin: auto;
@@ -496,6 +521,28 @@
     .postPhoto{
         padding: 0px 25px;
     }
+    .pItems{
+        height: 290px;
+    }
+    .pItems h4{ 
+        font-size: 10px;
+    }
+    .pItems p,.pItems h5{
+        font-size: 8px;
+    }
+    .data-container{
+        gap: 15px;
+    }
+    .pItems img{
+        height: 150px;
+    }
+    .related{
+        margin-bottom: 0px;
+    }
+    .recTitle{
+        margin-top: 10px;
+    }
+
 }
 
 @media only screen and (max-width:533px){
@@ -539,6 +586,7 @@
     .editProf,.outEdit{
         height: 65vw;
     }
+    
     .outEdit{
         width: 80%;
     }
@@ -611,6 +659,9 @@
     .pop_up{
         width: 370px;
     }
+    .data-container{
+        grid-template-columns: 30% 30% 30%;
+    }
 }
 @media only screen and (max-width:430px){
     body{
@@ -629,7 +680,7 @@
         --blogs-title-font-size:20px;
     }
     .profile{
-        height: 90vw;
+        height: 80vw;
         margin-bottom: 250px;
     }
     .heading{
@@ -637,6 +688,16 @@
     }
     .editProf,.outEdit{
         height: 90vw;
+    }
+    .outEdit{
+        margin: 0;
+        width: 100%;
+    }
+    .photo{
+        width: 30%;
+    }
+    .details{
+        width: 70%;
     }
     .details{
         height: 200px;
@@ -700,7 +761,7 @@
         top: 25px;
     }
     .blogs{
-        height: 410vw;
+        height: 350vw;
         margin-bottom: 20px;
     }
 
@@ -709,7 +770,8 @@
     --spacer:0.8rem;
     }
     .related{
-        height: 60vw;
+        height: 65vw;
+        padding: 5px;
     }
     .types{
         display: grid;
@@ -760,6 +822,16 @@
     .pop_up{
         width: 300px;
     }
+    .data-container{
+        gap: 10px;
+        padding-left: 4%;
+    }
+    .pItems img{
+        height: 140px;
+    }
+    .pItems a{
+        font-size: small;
+    }
 }
 
 @media only screen and (max-width:339px){   
@@ -796,14 +868,23 @@
 .editProf,.outEdit{
     height: 120vw;
 }
-.outEdit{
-    width: 90%;
-}
 .details{
-    gap: 2px;
+    width: 67%;
+    gap: 6px;
 }
 .elab{
     font-size: medium;
+}
+.details input{
+    width: 76%;
+    padding-left: 1px;
+}
+.editImg{
+    height: 89px !important;
+    width: 89px !important;
+}
+.file{
+    font-size: 11px;
 }
 .formContainer textarea{
     height: 90px;
@@ -812,7 +893,7 @@
     width: 50%;
 }
 .blogs{
-    margin-bottom: 20px;
+    height: 360vw;
 }
 .heading{
     position: relative;
@@ -828,7 +909,7 @@
     height: 45rem;
 }
 .content{
-    padding-top: 20px;
+    padding-top: 29px;
 }
 .log{
     right: -3%;
@@ -847,9 +928,6 @@
 .footerInfo p{
     font-size: 10px;
 }
-.editProf{
-    width: 105%;
-}
 .pinp{
     border: 0.7px solid #cfc2d3;
 }
@@ -858,6 +936,12 @@
 }
 .pop_up{
     width: 250px;
+}
+.pItems h4{
+    font-size: 9px;
+}
+.pItems img{
+    height: 130px;
 }
 
 }

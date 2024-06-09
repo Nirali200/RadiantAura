@@ -114,10 +114,138 @@
       } 
     ],
     "sensitiveSkin":[
-      
+      {
+         "id": 1,
+         "title":"kit",
+         "name" :"Sensitive Skin Bundle (Suitable for Rosacea, Redness, Rashes)",
+         "image_url":"https://www.oleumcottage.com/cdn/shop/files/sensitive-skin-bundle-suitable-for-rosacea-redness-rashes-oleum-cottage_3000x.jpg?v=1700644336",
+         "url":"https://www.oleumcottage.com/cdn/shop/files/sensitive-skin-bundle-suitable-for-rosacea-redness-rashes-oleum-cottage_3000x.jpg?v=1700644336",
+         "price":3325,
+         "rating":5,
+         "website":"oleumcottage"
+      },
+      {
+         "id": 2,
+         "title":"face-wash",
+         "name" :"Sensitive Skin Regime",
+         "image_url":"https://www.novology.com/cdn/shop/files/Sensitive_Skin_Regime_94160325-1479-4a51-b257-4778558fd394.jpg?v=1691582389",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjq9cWB6L6GAxUVSkcBHUOLDTIYABAEGgJxdQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf0X-qt7qpvuo69Nq_pvcl5fyoGppKXEtzidZdddX_dZY_EcG3pTiwkaAptJEALw_wcB&ei=i2NdZrPlF-jbseMP-aGh4AI&ohost=www.google.com&cid=CAESVeD2oUx6qixJ0ataQ01YqzG4zZ65XKi_YZ4nv2ds_U3_AnUdXI0RX1vISYF9Xo42RjJYChuR7txu-EfD12XMLv127vQMhwFBBYCVaiyyXxN-PmUc9f8&sig=AOD64_3oQMLLLmxb0fpAK8V__DWK4J8vdA&ctype=5&q=&nis=4&sqi=2&ved=2ahUKEwjz1raB6L6GAxXobWwGHflQCCwQ9aACKAB6BAgEEB8&adurl=",
+         "price":765,
+         "rating":0,
+         "website":"Novology"
+      },
+      {
+         "id": 3,
+         "title":"kit",
+         "name" :"Sensitive Skin Starter Kit",
+         "image_url":"https://putsimply.co.in/cdn/shop/files/RA_WD_17c62049-a02c-4314-9ae8-984b16488272_800x.webp?v=1716915986",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjq9cWB6L6GAxUVSkcBHUOLDTIYABAFGgJxdQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf3DPpDkrM3WPOSeWC-CDtKB0C6vQCUuASDEIwYk0OAO_wpukT6Q07saAn08EALw_wcB&ei=i2NdZrPlF-jbseMP-aGh4AI&ohost=www.google.com&cid=CAESVeD2oUx6qixJ0ataQ01YqzG4zZ65XKi_YZ4nv2ds_U3_AnUdXI0RX1vISYF9Xo42RjJYChuR7txu-EfD12XMLv127vQMhwFBBYCVaiyyXxN-PmUc9f8&sig=AOD64_3F9ipCOiIqakOFGq8Zl9LGL-FV-w&ctype=5&q=&nis=4&sqi=2&ved=2ahUKEwjz1raB6L6GAxXobWwGHflQCCwQ9aACKAB6BAgEEDQ&adurl=",
+         "price":2299,
+         "rating":4.5,
+         "website":"Put Simply"
+      },
+      {
+         "id": 4,
+         "title":"kit",
+         "name" :"Sensitive Skin Combo",
+         "image_url":"https://www.vilvahstore.com/cdn/shop/files/Sensitive-skin-combo_1.jpg?v=1692984031&width=800",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjq9cWB6L6GAxUVSkcBHUOLDTIYABAOGgJxdQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf0uj85KBcy03MzpR2-x2VvaRKlycMhODKO7uNA-8GmTqimhksLQgkcaAj_bEALw_wcB&ei=i2NdZrPlF-jbseMP-aGh4AI&ohost=www.google.com&cid=CAESVeD2oUx6qixJ0ataQ01YqzG4zZ65XKi_YZ4nv2ds_U3_AnUdXI0RX1vISYF9Xo42RjJYChuR7txu-EfD12XMLv127vQMhwFBBYCVaiyyXxN-PmUc9f8&sig=AOD64_0sElIsbTOxnUFqwicqsSXfDdENbQ&ctype=5&q=&nis=4&sqi=2&ved=2ahUKEwjz1raB6L6GAxXobWwGHflQCCwQ9aACKAB6BAgEEEk&adurl=",
+         "price":829,
+         "rating":4.8,
+         "website":"vilvahStore"
+      },
+      {
+         "id": 5,
+         "title":"face-wash",
+         "name" :"Green Coffee Shower Gel",
+         "image_url":"https://oteria.com/cdn/shop/files/Oteria_GreenCoffeeShowerGel_1_Upload.jpg?v=1704786305&width=1445",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjq9cWB6L6GAxUVSkcBHUOLDTIYABAQGgJxdQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf2_DQ9k7hGvPHjlMy4GoLqrxRVn_IHR2Hn5tQwqhjgwxzctaznkQBMaAj_QEALw_wcB&ei=i2NdZrPlF-jbseMP-aGh4AI&ohost=www.google.com&cid=CAESVeD2oUx6qixJ0ataQ01YqzG4zZ65XKi_YZ4nv2ds_U3_AnUdXI0RX1vISYF9Xo42RjJYChuR7txu-EfD12XMLv127vQMhwFBBYCVaiyyXxN-PmUc9f8&sig=AOD64_33WG0ueGg8LG3QtJAME4bf8ESAlg&ctype=5&q=&nis=4&sqi=2&ved=2ahUKEwjz1raB6L6GAxXobWwGHflQCCwQ9aACKAB6BAgEEGM&adurl=",
+         "price":1299,
+         "rating":4.5,
+         "website":"Oteria"
+      }   
     ],
     "allSkinType":[
-      
+      {
+         "id": 1,
+         "title":"serium",
+         "name" :"Mfine-koji Night serium",
+         "image_url":"https://oteria.com/cdn/shop/files/Oteria_GreenCoffeeShowerGel_1_Upload.jpg?v=1704786305&width=1445",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjys_zp6r6GAxXIyjwCHX4FBbsYABADGgJzZg&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf25QnYj1tS58zUCUvF2mbTvQxj9qDHsA9rnaVqon1Nu54xIxVBShmcaApe6EALw_wcB&ohost=www.google.com&cid=CAESVeD2Ke-DCD9pOxqAv05ZvLahi7eWSKIAMHZZpszICWncZ5rnpOkt3KuC3LJF0JXbxO6LN5GXRJymyWISEz_2Ux9sMfJsvqAQq25vJC5fIqm61Ll8758&sig=AOD64_0Ietfj-QKiosfmNJ63u2KygSmz2w&ctype=5&q=&nis=4&ved=2ahUKEwjQ4vbp6r6GAxWdUGwGHTfnAp4Q9aACKAB6BAgEEBA&adurl=",
+         "price":629,
+         "rating":4.7,
+         "website":"mfine"
+      },
+      {
+         "id": 2,
+         "title":"face-wash",
+         "name" :"Albizzia Cleansing Mousse",
+         "image_url":"https://albizzia.store/cdn/shop/files/Artboard1copy19.jpg?v=1715060133&width=823",
+         "url":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjoqZS7676GAxWng0sFHTbFDvEYABAKGgJzZg&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf179l2tqwg9Mjt8E5P6jKR3BiQ1gk3dt-fVM7KNnlLhUSXTRP4MT-gaAuqHEALw_wcB&ohost=www.google.com&cid=CAESVeD2XZ6U_DaxHHDuRmF3iN7NhcDe1E2oXU1JB9N_3ESBEGv_rtXgSOJ7l0enxg4hq_zWwnHNnhi1lryG89A2x43F6Eo2qba0tVxFbrPiQgi2p3-BNzk&sig=AOD64_3PqfXvnRIvHAHWfviv-J9Sb3qoYQ&ctype=5&q=&nis=4&ved=2ahUKEwjK_Iy7676GAxX5ZmwGHVvSAscQ9aACKAB6BAgEEBA&adurl=",
+         "price":999,
+         "rating":5,
+         "website":"ALBIZZIA"
+      },
+      {
+         "id": 3,
+         "title":"Moisturizer",
+         "name" :"Dot & Key Vitamin C + E Super Bright Moisturizer - 60 ml",
+         "image_url":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRToo27QGncYMAQjHU9PFXLIJ5_SbF3ZoC5qbd2fdlHYqObuzBKJNOBzEs_oxJSrdIdaLTDN4Fq47i-Pn0UtA4bE5VzakZ9ikNHZEftrNtdAQE3vfBboST1kQ&usqp=CAE",
+         "url":"https://www.google.com/url?q=https://www.nykaa.com/dot-key-vitamin-c-e-super-bright-moisturizer/p/2793282%3Fptype%3Dproduct%26skuId%3D2793280%26srsltid%3DAfmBOoqLhQKUPRjgvJh81G3YBzwOBSEHSpo-X9HaUDlfkmDgkjSyeqf3IYw&opi=95576897&sa=U&ved=0ahUKEwjEqYnf676GAxWiklYBHVhCJy8QsDwIpgY&usg=AOvVaw1wINI1sVeT-iX6uzFCt_j7",
+         "price":431,
+         "rating":4.8,
+         "website":"Nykaa"
+      },
+      {
+         "id": 4,
+         "title":"serium",
+         "name" :"The Derma Co 2% Kojic Acid Face Serum with 1% Alpha Arbutin",
+         "image_url":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTFsu0mRqNQI11L4LDofH6KF5zPr2-2RqPlQbaRvdO_OaP46OQ3sdbRToGfnX-zebI2T7drAo7YT9El_K-dQ8MGHfmqONLwXCfcoY5qYwtTHKmtntXW26nvQ&usqp=CAE",
+         "url":"https://www.google.com/url?q=https://www.amazon.in/Derma-Co-Arbutin-Niacinamide-Pigmentation/dp/B0C4B98N79%3Fsource%3Dps-sl-shoppingads-lpcontext%26ref_%3Dfplfs%26psc%3D1%26smid%3DA15APWRK6P7LBV&opi=95576897&sa=U&ved=0ahUKEwjEqYnf676GAxWiklYBHVhCJy8QsDwI7gU&usg=AOvVaw1VGnCiaZ2v5O_TjsoqRwT2",
+         "price":216.63,
+         "rating":4.5,
+         "website":"Amazon"
+      },
+      {
+         "id": 5,
+         "title":"serium",
+         "name" :"Hyperpigmentation Serum | Pack Of 2 | Tranexamic Acid, Niacinami",
+         "image_url":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2cSN33SHHJFSNjXVJF_6XTIlJE0OYqUaPBk3q3s6yuqtdETwOL-2SKOYxSk0jXL8eKm1-rUJVeIqoWN76Ahj7jaAYNIaS&usqp=CAY",
+         "url":"https://www.google.com/url?q=https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid%3Fvariant%3D43813094293751%26currency%3DINR%26srsltid%3DAfmBOor2IzpTFW7um9kkChKNyU_bJ6JLBBc1R1_fdpBqGCU8f6JpwbnFVqI&opi=95576897&sa=U&ved=0ahUKEwjEqYnf676GAxWiklYBHVhCJy8QwisIhwc&usg=AOvVaw218VhlNHu4KltkZJDBCNvA",
+         "price":1165,
+         "rating":4.8,
+         "website":"FoxTale"
+      },
+      {
+         "id": 6,
+         "title":"cream",
+         "name" :"Be Bodywise Pigmentation Repair Cream (100 g)",
+         "image_url":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRX5ojDnuMox_aP_zhPjd3cS__7dIm5Otv_1tlX0ZrBrZmF4uRk6YShmyigd6yKgLMZmtmJujxozLrFa5vtdqKM-CiBg_AqaO_mE3kgp7FHHxNBBQ3xPZco&usqp=CAE",
+         "url":"https://www.google.com/url?q=https://bebodywise.com/product/pigmentation-repair-cream%3Fsrsltid%3DAfmBOopQIt0IqiEXeWKdn5tdkbgwno_ZwK42ItqL-wT8506qnPVZvje8yrE&opi=95576897&sa=U&ved=0ahUKEwjEqYnf676GAxWiklYBHVhCJy8QsDwIjQk&usg=AOvVaw1Ynpv1qiMm_RCArOpKnqJX",
+         "price":549,
+         "rating":4.2,
+         "website":"Bodywise"
+      },
+      {
+         "id": 7,
+         "title":"Moisturizer",
+         "name" :"Dr. Sheth'S Kesar & Kojic Acid Oil-Free Moisturizer 50 G",
+         "image_url":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ0mRDHD-YXYxvtufS8xidzMO-w8l1203Az4OP44KGn8isQIQ2kwXDY0hm6aKElPDadrP-Q6fkJBkK79eK9q8mof9-LkipLofWV0YLi3Sk&usqp=CAE",
+         "url":"https://www.google.com/url?q=https://www.nykaaman.com/dr-sheth-s-kesar-kojic-acid-oil-free-moisturizer/p/12552456%3Fptype%3Dproduct%26skuId%3D12552456&opi=95576897&sa=U&ved=0ahUKEwjEqYnf676GAxWiklYBHVhCJy8QsDwInQo&usg=AOvVaw3e-COAg1_RngIdcV81QeYP",
+         "price":307,
+         "rating":4.7,
+         "website":"Nykaa"
+      },
+      {
+         "id": 8,
+         "title":"face-wash",
+         "name" :"Minimalist Salicylic Acid + LHA 2% Cleanser 100ml",
+         "image_url":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTY6AlEY2GYZxmOFDQeX0idT_DOM0qnX1Ew25NZtUxEGsoPT_uT1AUUlJZdFTxz4smIY2b9QemquemX4aueQWjtzSQgVBbygQbqWf3k8CWISDXQ46MKWiEjepM&usqp=CAE",
+         "url":"https://www.google.com/url?q=https://beminimalist.co/products/salicylic-lha-2-cleanser%3Fcurrency%3DINR%26variant%3D40105720905889%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DGoogle%2520Shopping%26stkn%3Df4faea6d89b6%26srsltid%3DAfmBOoq04l87EJo-agoXnxrpoz0y6zEc5CTkkLAUeNz9OTZ3pNMKHQMwlno&opi=95576897&sa=U&ved=0ahUKEwi7jtu-7b6GAxVkgVYBHcnzLN4QsDwIgQg&usg=AOvVaw2w5T-lsf5xnp9H5sWod3Ts",
+         "price":295,
+         "rating":4.0,
+         "website":"Minimalist"
+      } 
     ]
 
 }

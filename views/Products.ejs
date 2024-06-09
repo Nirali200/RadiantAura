@@ -33,7 +33,27 @@
             </div>
             <div class="logo">RadiantAura</div>
             <div class="navRight">
-                <a class="log" href="/logOut">Log Out</a>
+                <div class="sarchBox">
+                    <div class="box">
+                        <input type="text" placeholder="Search....." id="input-box">
+                        <img class="search" src="../images/search.png">
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="results">
+                        
+                    </div>
+                </div>
+                <% if(locals.profile){ %>
+                    <a class="log" href="/logined"><% if(locals.Image == undefined){%>
+                        <img src="../images/profile.png" class="pimg"></img>
+                        <%} else { %>
+                        <img src="../userImages/userImg/<%=locals.Image%>" class="pimg"></img>
+                        <%} %></a>
+                <% }else  {%> 
+                <a class="log" href="/login">Log In</a>
+                <%} %>
             </div>
         </nav>
     </div>

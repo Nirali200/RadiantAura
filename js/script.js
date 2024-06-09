@@ -118,9 +118,4 @@ inputBox.onkeyup = function(){
     }
     
 
-const product = document.querySelector(".type_wrap");
-
-product.addEventListener('click',()=>{
-    
-})
     
