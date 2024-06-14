@@ -17,10 +17,6 @@ const getRegistration =  (req,res) =>{
     const isVerified = false;
     
     let user = await users.findOne({email});
-    
-    if(user){
-        return  res.render("Register",{message :"User Allready Exits"});
-    }
 
     user = await users.findOne({UserName});
     if(user){
@@ -381,7 +377,6 @@ const changePass = async(req,res) =>{
         user = await users.findById(decode._id).select("+Password");
         const isMatch = await bcript.compare(Password,user.Password);
         const {UserName,email,Phone,Image} = user;
-        console.log("hmm");
         if(!isMatch){
             return res.render("changePass",{message: "Incorrect Password !!!" });
         }
