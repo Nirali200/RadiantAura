@@ -201,6 +201,7 @@
  padding: 15px;
  margin-top: 15px;
  font-size: var(--mid-font-size);
+ color: #292729;
  border-radius: 5px;
  background: transparent;
  border-color:var(--btn-border);
@@ -626,6 +627,7 @@
 
 .logsub{
     margin-top: 5px;
+    background-color: #eae8e8;
     width: 150px !important;
 }
 
@@ -795,6 +797,12 @@ content: "";
     margin: auto 0px;
 }
 
+.detail p{
+    color: #292729;
+}
+
+
+
 .photo{
     display: flex;
     flex-direction: column;
@@ -806,7 +814,7 @@ content: "";
 }
 
 input[type ='file']{
-    display: none;
+    opacity: 0;
 }
 
 .material-symbols-outlined {
@@ -815,6 +823,9 @@ input[type ='file']{
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+.forpass{
+    width: 80%;
 }
 
 .file{
@@ -862,6 +873,8 @@ input[type ='file']{
     cursor: pointer;
     border:  1px  solid transparent;
     outline: 1px solid transparent;
+    color: #292729;
+    background-color: #eae8e8;
 }
 .ebtn:hover{
     color: var(--btn-border);
@@ -1044,4 +1057,8 @@ input[type ='file']{
     margin: 10px 10px;
     object-fit: contain;
     mix-blend-mode: darken;
+}
+
+.pItems a{
+    color: rgb(139, 59, 250);
 }

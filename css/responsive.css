@@ -10,7 +10,7 @@
     --box-shadow: 0 10px 25px rgba(0, 0, 0,0.3);
     --gray-shade:rgb(234, 225, 225);
     --white-backGround:rgba(255, 255, 255, 0.605);
-    --nav-backGround:rgba(231, 211, 231, 0.901);
+    --nav-backGround:rgb(224 182 198 / 90%);
 }
 
 .hamburger{
@@ -115,6 +115,7 @@
         height: 450px;
         backface-visibility: hidden;
         margin: 0px 0px;
+        border-radius: 2px;
     } 
     .resAnimate{
         animation-name: shows;
@@ -184,6 +185,9 @@
     }
     .related{
         margin-bottom: 120px;
+    }
+    .active{
+        color: #f2f2f2 !important;
     }
 }
 
@@ -602,6 +606,9 @@
     .name{
         margin: 2%;
     }
+    .resAnimate{
+        height: 220px !important;
+    }
     .res{
         display: block;
         width: 40%;
@@ -714,10 +721,17 @@
     .name{
         margin: 20px;
     }
+    .navRight{
+        width: 30%;
+    }
     .navLeftResp{
         position: absolute;
         top: 0;
-        width: 140px;
+        width: 170px;
+        height: 175px;
+    }
+    .navLeftResp ul{
+        height: auto;
     }
     .pimg{
         height: 27px;
@@ -793,7 +807,7 @@
         height: 100px;
     }
     .log{
-        right: 1%;
+        right: 5%;
     }
     .main{
         height: 100px;
@@ -831,6 +845,12 @@
     }
     .pItems a{
         font-size: small;
+    }
+}
+
+@media only screen and (max-width:380px){   
+    .file{
+        font-size: 11px;
     }
 }
 
@@ -883,9 +903,6 @@
     height: 89px !important;
     width: 89px !important;
 }
-.file{
-    font-size: 11px;
-}
 .formContainer textarea{
     height: 90px;
 }
@@ -904,6 +921,9 @@
     padding: 8px;
     margin-left: -20%;
     margin-top: 10px;
+}
+.navLeftResp{
+    width: 140px;
 }
 .aboutUs{
     height: 45rem;

@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
     filename:function(req,file,cb){
         const name = "user.png";
         cb(null,name);
-    }
+    }   
 })
 
 const upload = multer({storage:storage});
