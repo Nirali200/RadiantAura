@@ -555,6 +555,8 @@
     outline: 2px solid var(--gray-shade);
     border: none;
     border-radius:4px;
+    color: #292729;
+    background-color: #eae8e8;
 }
 
 .formContainer input::placeholder,.formContainer textarea::placeholder{
