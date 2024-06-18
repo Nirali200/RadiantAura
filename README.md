@@ -22,6 +22,15 @@
 - File Uploads: Users can upload profile image using multer.
 - File Uploads: Users can upload images for analysis using multer.
 
+## Sneak Peek of Site 🙈 :
+![home page](images/HomePage.png)
+![Related posts page](images/RelatedPosts.png)
+![login page](images/loginPage.png)
+![Profile page](images/ProfilePAge.png)
+![EditProfile page](images/EditProfilePage.png)
+![FAQ page](images/FAQPage.png)
+
+
 
 ### :key: Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
@@ -101,4 +110,4 @@ https://github.com/Nirali200/RadiantAura
 
 Nirali Darji - - darjinirali08@gmail.com
 
-Project Link: [https://github.com/Nirali200/RadiantAura](https://github.com/Nirali200/RadiantAura)
+Live Project Link: [https://radiantaura.onrender.com/](https://radiantaura.onrender.com/)
