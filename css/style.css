@@ -1064,3 +1064,58 @@ input[type ='file']{
 .pItems a{
     color: rgb(139, 59, 250);
 }
+
+
+
+.knowmorcontainer{
+    display: flex;
+    width: 100%;
+    height: 60vw;
+}
+.partLft{
+    width: 45%;
+    background:url(../images/dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.partRgt{
+    width: 55%;
+    background: url(../images/light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rad{
+    margin: auto;
+    height: 50%;
+    width: 70%;
+    object-fit: cover;
+    opacity: 0.8;
+    mix-blend-mode: lighten;
+}
+
+.partRcontainer h3, h2 {
+    color: #b30059;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.partRcontainer  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "Rubik", sans-serif;
+}
+
+.partRcontainer {
+            max-width: 85%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.336);
+            border-radius: 10px;
+            font-family: "Rubik", sans-serif;
+}

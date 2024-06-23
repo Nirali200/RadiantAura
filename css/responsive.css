@@ -65,7 +65,12 @@
         width: 35px;
         border-radius: 35px;
     }
-
+    .partRcontainer h3, h2 {
+        font-size: 1.5vw;
+    }
+    .partRcontainer p {
+        font-size: 1.0vw;
+    }
 }
 
 
@@ -327,6 +332,17 @@
     .pItems img{
         height: 200px;
     }
+    .partRcontainer h3, h2 {
+        font-size: 1.8vw;
+    }
+    .partRcontainer p {
+        font-size: 1.2vw;
+        padding-bottom: 0px;
+        line-height: 1.2;
+    }
+    .knowmorcontainer{
+        height: 68vw;
+    }
 }
 
 @media only screen and (max-width:784px){
@@ -546,7 +562,21 @@
     .recTitle{
         margin-top: 10px;
     }
-
+    .partRcontainer h3, h2 {
+        font-size: 2vw;
+    }
+    .partRcontainer p {
+        font-size: 1.5vw;
+        padding-bottom: 0px;
+        line-height: 1.2;
+    }
+    .knowmorcontainer{
+        height: 85vw;
+    }
+    .rad{
+        width: 85%;
+        height: 40%;
+    }
 }
 
 @media only screen and (max-width:533px){
@@ -846,6 +876,21 @@
     .pItems a{
         font-size: small;
     }
+    .knowmorcontainer{
+        height: 105vw;
+    }
+    .rad{
+        height: 38%;
+    }
+    .partRcontainer h3, h2 {
+        font-size: 2.1vw;
+    }
+    .partRcontainer p {
+        font-size: 1.9vw;
+    }
+    .partRcontainer{
+        padding: 3px;
+    }
 }
 
 @media only screen and (max-width:380px){   
@@ -962,6 +1007,12 @@
 }
 .pItems img{
     height: 130px;
+}
+.knowmorcontainer{
+    height: 115vw;
+}
+.rad{
+    height: 37%;
 }
 
 }

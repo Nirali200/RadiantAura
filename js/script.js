@@ -118,4 +118,8 @@ inputBox.onkeyup = function(){
     }
     
 
+const knowMore=  () =>{
+    console.log("redirecting");
+    window.location.href="/knowMore";
+}
     

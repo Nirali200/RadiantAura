@@ -421,5 +421,19 @@ const getProducts = async(req,res) => {
     return res.render("Products.ejs",{profile});
 }
 
+const getKnowMore = async(req,res) =>{
+    const {token} = req.cookies;
+    let user;
+    let profile = false;
+    if(token){
+         profile = true;
+        const decode  = jwt.verify(token,process.env.SECRET_STRING);
+        user = await users.findById(decode._id);
+        const {Image} = user;
+        return res.render("KnowMore.ejs",{profile,Image});
+    }
+    return res.render("KnowMore.ejs",{profile});
+}
 
-module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass,getProducts };
+
+module.exports = { getRegistration,postRegistration,getLogin,checkAuth,postLogin,logOut,logedIn,edit,editPost,getFaq,getEmailVer,verifyMail,postVerify,sendOtp,relatedPosts,getChangePass,changePass,deleteAcc,getforgotPass,forgotOTP,postForgotOtp,setPassword,postSetPass,getProducts,getKnowMore };
