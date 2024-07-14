@@ -12,12 +12,12 @@ const getRegistration =  (req,res) =>{
         res.render("Register");
 }
 
-    const postRegistration = async(req,res) =>{
+const postRegistration = async(req,res) =>{
     const { UserName , email , Phone, Password } = req.body;
     const isVerified = false;
     
     let user = await users.findOne({email});
-
+    
     user = await users.findOne({UserName});
     if(user){
         return  res.render("Register",{message :"User Allready Exits"});

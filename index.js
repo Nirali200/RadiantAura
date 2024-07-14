@@ -11,7 +11,7 @@ connectDb();
 
 
 app.use(cookieParser());
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({extended: true}));
 app.use("/css",express.static(path.join(path.resolve(),"/css")));
 app.use("/userImages",express.static(path.join(path.resolve(),"/userImages")));
 app.use("/images",express.static(path.join(path.resolve(),"/images")));

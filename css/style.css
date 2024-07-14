@@ -171,7 +171,7 @@
 .home{
   display: flex;
   height: 40vw;
-  background: url("../images/homeBack.jpg");
+  background: url("https://radiantaura.onrender.com/images/homeBack.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
