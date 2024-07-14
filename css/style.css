@@ -226,7 +226,7 @@
 
 .aboutlft{
     width: 40%;
-    background: url("../images/dailyHabit.jpeg");
+    background: url("https://radiantaura.onrender.com/images/dailyHabit.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -453,7 +453,7 @@
 .recommanded{
     height: 55rem;
     display: block;
-    background:url("../images/back_att.jpg");
+    background:url("https://radiantaura.onrender.com/images/back_att.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -505,7 +505,7 @@
 
 .contactUs{
     padding: 25px;
-    background-image: url('../images/contact_back.jpg');
+    background-image: url('https://radiantaura.onrender.com/images/contact_back.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -591,7 +591,7 @@
     justify-content: center;
     align-items: center;
     height: 35vw;
-    background-image: url("../images/login_back.jpg");
+    background-image: url("https://radiantaura.onrender.com/images/login_back.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1074,7 +1074,7 @@ input[type ='file']{
 }
 .partLft{
     width: 45%;
-    background:url(../images/dark.jpg);
+    background:url(https://radiantaura.onrender.com/images/dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1083,7 +1083,7 @@ input[type ='file']{
 
 .partRgt{
     width: 55%;
-    background: url(../images/light.png);
+    background: url(https://radiantaura.onrender.com/images/light.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
